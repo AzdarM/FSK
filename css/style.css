@@ -1,0 +1,93 @@
+.side-nav {
+    width: 15.5rem !important
+}
+
+.btn-outline-danger {
+    color: white !important
+}
+
+.p_font_index {
+    font-weight: 400
+}
+
+.side-nav .logo-wrapper {
+    height: 160px
+}
+
+.mix_slide h1 {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.mix_slide p {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+.slider_slick img {
+    border: 1px solid #000;
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-6 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.fz14 {
+    font-size: 14px;
+}
+
+.streak.streak-photo {
+    background-attachment: fixed;
+}
+
+.bg_bank .bg_pred {
+    height: 100%;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_bank {
+    background-image: url("/img/bank/bank_bg.jpg");
+}
+
+.bg_pred {
+    background-image: url("/img/predprinimatel/1.jpg");
+}
+
+.onlynumber {
+    -moz-appearance: textfield;
+}
+
+.onlynumber::-webkit-inner-spin-button {
+    display: none;
+}
+
+.modal-notify .modal-header {
+    border-radius: 3px 3px 0 0;
+}
+
+.modal-notify .modal-content {
+    border-radius: 3px;
+}

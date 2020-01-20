@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Гарантийный Фонд Республики Дагестан</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//гфрд.рф//css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link href="//гфрд.рф//css/mdb.css" rel="stylesheet">
+    <link rel="stylesheet" href="//гфрд.рф//css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//гфрд.рф/js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//гфрд.рф/js/slick-1.8.1/slick/slick-theme.css" />
+</head>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-lg red waves-effect waves-light">
+        <i class="fas fa-pencil-alt"></i>
+    </a>
+
+    <ul class="list-unstyled">
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="btn-floating light-blue darken-4 darken-1 waves-effect waves-light"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/garant_fond_rd/" class="btn-floating brown darken-3 darken-1 waves-effect waves-light"><i
+                    class="fab fa-instagram"></i></a></li>
+        <li><a href="mailto:dagfsc@yandex.ru" class="btn-floating success-color-dark darken-1 waves-effect waves-light"><i
+                    class="fas fa-envelope"></i></a></li>
+    </ul>
+</div>
+
+<body class="fixed-sn mdb-skin">
+    <div class="modal fade" id="modalCallBackForm" tabindex="-1" role="dialog" aria-labelledby="myCallBackLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title white-text w-100 font-weight-bold py-2">Обратный звонок</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <form id="contact-form" name="contact-form" action="mailCallBack.php" method="POST">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-contact-name" name="name" class="form-control">
+                            <label for="form-contact-name">Ваше имя</label>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-phone prefix grey-text"></i>
+                            <input type="number" id="form-contact-phone" name="phone" class="form-control onlynumber">
+                            <label for="form-contact-phone">Номер телефона</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-outline-info waves-effect" onclick="document.getElementById('contact-form').submit();" data-dismiss="modal">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light">
+                        <a href="index.html"><img src="/img/tr_logo_fsc1.png" class="img-fluid flex-center"></a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="icons-sm fb-ic" material-tooltip-main data-toggle="tooltip"
+                                data-placement="top" title="Facebook"><i class="fab fa-facebook-f"> </i></a></li>
+                        <li><a href="https://www.instagram.com/garant_fond_rd/" class="icons-sm ins-ic" material-tooltip-main data-toggle="tooltip" data-placement="top" title="Instagram"><i
+                                    class="fab fa-instagram"> </i></a></li>
+                        <li><a href="mailto:dagfsc@yandex.ru" class="icons-sm email-ic" material-tooltip-main data-toggle="tooltip" data-placement="top" title="Написать нам"><i
+                                    class="far fa-envelope"> </i></a></li>
+                    </ul>
+                </li>
+                <!--/Social-->
+
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a a href="index.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a a href="about.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-industry"></i> О фонде</a></li>
+                        <li><a href="news.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-newspaper"></i> Новости</a></li>
+                        <li><a href="predprinimatel.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-users"></i> Предпринимателям</a></li>
+                        <li><a href="bank.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-credit-card"></i> Банкам и партнерам</a></li>
+                        <li><a href="konkurs.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-scroll"></i> Конкурсы</a></li>
+                        <li><a href="history.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-history"></i> История успеха</a></li>
+                        <li><a href="/Tour/vtour/" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-video"></i> 3D Тур по фонду</a></li>
+                        <li><a href="trening.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-calendar-check"></i> Расписание тренингов</a></li>
+                        <li><a href="contact.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="far fa-envelope"></i> Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a a href="fmrd.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-coins"></i> Фонд микрофинансирования</a></li>
+                    <li><a a href="https://dagincubator.ru" class="collapsible-header waves-effect arrow-r"><i class="fas fa-business-time"></i>Бизнес-инкубатор</a></li>
+                </ul>
+            </li>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto p_font_index">
+                <p>Гарантийный фонд Республики Дагестан</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a href="https://www.google.com/maps?ll=42.950415,47.516105&z=16&t=m&hl=ru&gl=RU&mapclient=embed&q=%D1%83%D0%BB.+%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0,+120+%D0%9C%D0%B0%D1%85%D0%B0%D1%87%D0%BA%D0%B0%D0%BB%D0%B0+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%94%D0%B0%D0%B3%D0%B5%D1%81%D1%82%D0%B0%D0%BD+367010"><button type="button" class="btn btn-outline-light btn-sm waves-effect"><i
+                            class="fas fa-map-marker left"></i>367010, РД, г.Махачкала улица Гагарина 120, 1
+                                        этаж</button></a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-light btn-sm waves-effect"><i
+                            class="fas fa-phone left"></i>+7 (8722) 51-82-94</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-danger btn-sm waves-effect" data-toggle="modal" data-target="#modalCallBackForm"><i
+                            class="fas fa-clone left"></i>Обратный звонок</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!--/.Double navigation-->
+    <!--Main layout-->
+    <main>
+        <div class="container-fluid bg_bank m-0 p-0">
+            <div class="mask rgba-blue-grey-strong">
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6 mt-4 white-text text-center text-md-left p-0">
+                            <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Банкам и партнерам Гарантийного фонда</h1>
+                            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                            <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Фонд выдает поручительства по кредитам, банковским гарантиям, аккредитивам, лизингу и факторингу</h6>
+                            <a href="about.html" class="btn btn-outline-white wow fadeIn mt-3" data-wow-delay="0.5s">Подробнее о Фонде</a>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6 mt-4 white-text text-center text-md-left p-0">
+                            <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Работаем со всеми крупными банками страны</h1>
+                            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                            <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">При обращении в любой из наших банков-партнеров нужно всего лишь предоставить требуемые банком документы и проинформировать о желании воспользоваться поручительством Фонда. Никаких дополнительных формальностей.</h6>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                    <div class="streak">
+                        <div class="flex-center">
+                            <ul class="mb-0 list-unstyled">
+                                <li>
+                                    <h2 class="h2-responsive text-white text-left"><i class="fas fa-quote-left" aria-hidden="true"></i> Наша цель — помочь предпринимателям Республики Дагестан привлечь дополнительные денежные средства для развития своего бизнеса <i class="fas fa-quote-right" aria-hidden="true"></i></h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-4 p-0 wow fadeIn" data-wow-delay="0.3s">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-responsive-md">
+                        <thead class="rgba-green-strong">
+                            <tr>
+                                <th class="h6-responsive font-weight-bold">Преимущества работы с Гарантийным фондом</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Возможность участия в Государственной программе развития малого и среднего предпринимательства, финансируемой за счет Федерального и Республиканского бюджетов</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Возможность привлечения денежных средств Гарантийного фонда во вклады депозиты</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Возможность предоставления кредита малому и среднему предприятию при недостаточности у него необходимого обеспечения по кредиту</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Возможность расширения клиентской базы, в том числе за счет малых и средних предприятий, обращающихся за получением государственной поддержки непосредственно в Гарантийный фонд</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Возможность формирования резервов по выданному кредиту с учетом поручительства Гарантийного фонда, отнесенного к обеспечению II категории качества (Положение Банка России от 26.03.2004 № 254-П «О порядке формирования кредитными
+                                    организациями резервов на возможные потери по ссудам, по ссудной и приравненной к ней задолженности»)</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Возможность гарантированного получения от Гарантийного фонда денежных средств в счет частичного исполнения заемщиком (малым и средним предприятием) его обязательств по кредитному договору</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-responsive-md">
+                        <thead class="rgba-green-strong ">
+                            <tr>
+                                <th class="h6-responsive font-weight-bold">Информация о программе предоставления гарантий:</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/Banki/Prilozhenie.PDF"> Приложение №1</a></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/Banki/mailveb.pdf"> Письмо ВЭБ</a></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-responsive-md">
+                        <thead class="rgba-green-strong ">
+                            <tr>
+                                <th class="h6-responsive font-weight-bold">Лимиты установленные на Банки - участники программы Гарантийного фонда:</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/Banki/limit.pdf"> 10.01.2019</a></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-responsive-md">
+                        <thead class="rgba-green-strong ">
+                            <tr>
+                                <th class="h6-responsive font-weight-bold">Продуктовая линейка (вознаграждение):</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/Banki/product_line.PDF"> Продуктовая линейка</a></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-4 p-4 grey lighten-4 wow fadeIn" data-wow-delay="0.3s">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h3 class="font-weight-bold text-center">Как стать партнером фонда</h3>
+                    <hr>
+                    <div class="card-deck">
+                        <div class="card wow fadeIn" data-wow-delay="0.5s">
+                            <div class="card-body grey lighten-3 ">
+                                <h5 class="card-title blue-text ">Шаг 1</h5>
+                                <p class="card-text ">Отправить на имя Исполнительного директора Заявление по типовой Форме</p>
+                            </div>
+                        </div>
+                        <div class="card wow fadeInLeft " data-wow-delay="0.5s">
+                            <div class="card-body grey lighten-3 ">
+                                <h5 class="card-title blue-text ">Шаг 2</h5>
+                                <p class="card-text ">К Заявлению приложить документы указанные в регламенте по интересующему продукту</p>
+                            </div>
+                        </div>
+                        <div class="card wow fadeInUp " data-wow-delay="0.5s">
+                            <div class="card-body grey lighten-3 ">
+                                <h5 class="card-title blue-text ">Шаг 3</h5>
+                                <p class="card-text ">Фонд производит оценку в течение 15 дней и формирует заключение</p>
+                            </div>
+                        </div>
+                        <div class="card wow fadeInRight " data-wow-delay="0.6s">
+                            <div class="card-body grey lighten-3 ">
+                                <h5 class="card-title blue-text ">Шаг 4</h5>
+                                <p class="card-text ">Заключение Фонда о результатах оценки передается на рассмотрение Совета Фонда</p>
+                            </div>
+                        </div>
+                        <div class="card wow fadeIn " data-wow-delay="0.5s">
+                            <div class="card-body grey lighten-3 ">
+                                <h5 class="card-title blue-text ">Шаг 5</h5>
+                                <p class="card-text ">При положительном решении, подписывается соглашение о сотрудничестве</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 ">
+                <div class="col-md-12 text-left ">
+                    <h3 class="font-weight-bold text-center ">Критерии отбора банков для вступления в программу Фонда:</h3>
+                    <hr>
+                    <ul class="list-unstyled ">
+                        <li>
+                            <p><span class="badge badge-primary ">1</span> Наличие лицензии Центрального Банка Российской Федерации на осуществление банковских операций</p>
+                        </li>
+                        <li>
+                            <p><span class="badge badge-primary ">2</span> Наличие положительного аудиторского заключения по итогам работы банка за три последних отчетных года, а также положительного аудиторского заключения по отчетности, составленной в
+                                соответствии с международными стандартами финансовой отчетности (МСФО), за три последних отчетных года по банку или банковской группе, при вхождении банка в банковскую группу</p>
+                        </li>
+                        <li>
+                            <p><span class="badge badge-primary ">3</span> Отсутствие примененных ЦБ РФ в отношении банка санкций в форме запрета на совершение отдельных банковских операций и открытие филиалов, в виде приостановления действия лицензии на
+                                осуществление отдельных банковских операций, а также отсутствие неисполненных предписаний ЦБ РФ с истекшими сроками на судебное обжалование или после вступления в силу судебного акта, в котором установлена законность предписания
+                                ЦБ РФ</p>
+                        </li>
+
+                        <li>
+                            <p><span class="badge badge-primary ">4</span> Наличие опыта работы по кредитованию субъектов малого и среднего предпринимательства не менее 6 (шести) месяцев, в том числе:</p>
+                            <ul>
+                                <li>наличие сформированного портфеля кредитов и (или) банковских гарантий, предоставленных субъектам малого и среднего предпринимательства на дату подачи Заявления на участке в отборе </li>
+                                <li>наличие специализированных технологий (программ) работы с субъектами малого и среднего предпринимательства</li>
+                                <li>наличие внутренней нормативной документации, в том числе утвержденной стратегии или отдельного раздела в стратегии, регламентирующих порядок работ с субъектами малого и среднего предпринимательства</li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <p><span class="badge badge-primary ">5</span> Наличие согласия, выраженного в Заявлении, с условиями настоящего Регламента и Регламентов Фонда, определяющими порядок предоставления поручительств</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4 ">
+                <div class="col-md-12">
+                    <h3 class="font-weight-bold text-center ">Список документов, которые необходимо приложить к заявлению:</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <p class="note note-primary"><strong>Информацию о качестве активов кредитной организации за последние три года поквартально</strong></p>
+                            <p class="note note-primary"><strong>Заверенные банком копии: Устава</strong></p>
+                            <p class="note note-primary"><strong>Заверенные банком копии лицензии (й) на осуществление банковских операций</strong></p>
+                        </div>
+                        <div class="col">
+                            <p class="note note-primary"><strong>Сведения о размещенных и привлеченных средствах за последние три года поквартально</strong></p>
+                            <p class="note note-primary"><strong>Заверенные банком копии свидетельства о государственной регистрации</strong></p>
+                            <p class="note note-primary"><strong>Заверенные банком копия аудиторского заключения за три предыдущих финансовых года, а также копия аудированной отчетности, составленной в соответствии с МСФО, за три последних отчетных года по банку или банковской группе</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-4 m-0 p-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="font-weight-bold text-center ">Банки-партнеры:</h3>
+                    <hr>
+                    <div class="slider_slick">
+                        <div>
+                            <a href="https://www.sberbank.ru/ru/person"><img src="/img/banki_resouce/sber.png" class="img-thumbnail img-fluid z-depth-1"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.rshb.ru/"><img src="/img/banki_resouce/rosselhoz.png" class="img-thumbnail img-fluid z-depth-1"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.vbank.ru/"><img src="/img/banki_resouce/Vozrozhdenie.png" class="img-thumbnail img-fluid z-depth-1"></a>
+                        </div>
+                        <div>
+                            <a href="https://mspbank.ru/"><img src="/img/banki_resouce/msp.png" class="img-thumbnail img-fluid z-depth-1"></a>
+                        </div>
+                        <div>
+                            <a href="http://www.creditinvestbank.ru/"><img src="/img/banki_resouce/kreditinvest.png" class="img-thumbnail img-fluid z-depth-1"></a>
+                        </div>
+                        <div>
+                            <a href="http://www.itb.ru/"><img src="/img/banki_resouce/investtorg.png" class="img-thumbnail img-fluid z-depth-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--/Main layout-->
+    <!--Footer-->
+    <footer class="page-footer text-center text-md-left pt-4 ">
+        <!--Footer Links-->
+        <div class="container-fluid ">
+            <div class="row ">
+                <!--First column-->
+                <div class="col-md-3 ">
+                    <h5 class="text-uppercase font-weight-bold mb-4 ">Гарантийный Фонд Республики Дагестан</h5>
+                    <p>Основной целью Фонда является обеспечение доступа субъектам МСП и организациям инфраструктуры поддержки субъектов МСП в Республике Дагестан к кредитным и иным финансовым ресурсам.</p>
+                </div>
+                <!--/.First column-->
+                <hr class="w-100 clearfix d-md-none ">
+                <!--Second column-->
+                <div class="col-md-3 mx-auto ">
+                    <h5 class="text-uppercase font-weight-bold mb-4 ">Федеральные</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="http://government.ru/ "><small>Правительство Российской Федерации</small></a></li>
+                        <li><a href="http://kremlin.ru/ "><small>Сайт президента Российской Федерации</small></a></li>
+                        <li><a href="http://economy.gov.ru/minec/main "><small>Министерство экономики РФ</small></a></li>
+                        <li><a href="http://www.gov.ru/ "><small>Официальные органы власти</small></a></li>
+                        <li><a href="https://corpmsp.ru/ "><small>Корпорация МСП</small></a></li>
+                        <li><a href="https://smbn.ru/ "><small>Портал Бизнес-Навигатор МСП</small></a></li>
+                        <li><a href="https://www.mspbank.ru/ "><small>МСП Банк</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+                <hr class="w-100 clearfix d-md-none ">
+                <!--Third column-->
+                <div class="col-md-3 mx-auto ">
+                    <h5 class="text-uppercase font-weight-bold mb-4 ">Республиканские</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="http://www.e-dag.ru/ "><small>Правительство республики Дагестан</small></a></li>
+                        <li><a href="http://president.e-dag.ru/ "><small>Глава республики Дагестан</small></a></li>
+                        <li><a href="http://www.minec-rd.ru/ "><small>Министерство экономики Республики
+                                    Дагестан</small></a></li>
+                        <li><a href="http://mspinvestrd.ru/ "><small>Агентство по предпринимательству и инвестициям
+                                    РД</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+                <hr class="w-100 clearfix d-md-none ">
+                <!--Fourth column-->
+                <div class="col-md-3 mx-auto ">
+                    <h5 class="text-uppercase font-weight-bold mb-4 ">Инфраструктура поддержки</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="https://dagincubator.ru"><small>Бизнес-инкубатор РД</small></a></li>
+                        <li><a href="http://xn--80aaablegdnj0dg0cep.xn--p1ai/ "><small>Фонд «Дагестанская лизинговая
+                                    компания»</small></a></li>
+                        <li><a href="http://fmrd.ru/ "><small>Фонд микрофинансирования РД</small></a></li>
+                        <li><a href="http://cppdag.ru/ "><small>Центр поддержки предпринимательства РД</small></a></li>
+                        <li><a href="http://mspinvestrd.ru/about/25 "><small>ГАУ РД «Учебно-производственный
+                                    комбинат»</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+        <!--Social buttons-->
+        <div class="social-section text-center ">
+            <ul class="list-unstyled list-inline ">
+                <li class="list-inline-item "><a a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK " class="btn btn-fb
+                            "><i class="fab fa-facebook-f "></i></a></li>
+                <li class="list-inline-item "><a a href="https://www.instagram.com/garant_fond_rd/ " class="btn btn-ins "><i class="fab fa-instagram "></i></a></li>
+                <li class="list-inline-item "><a a href="mailto:dagfsc@yandex.ru " class="btn btn-email "><i
+                            class="fas fa-envelope "></i></a></li>
+            </ul>
+        </div>
+        <!--/.Social buttons-->
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center ">
+            <div class="container-fluid "><a href="mailto:dejavood@gmail.com "> Azdar Mamaev</a></div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript " src="//гфрд.рф/js/jquery-3.3.1.min.js "></script>
+    <!-- Tooltips -->
+    <script type="text/javascript " src="//гфрд.рф/js/popper.min.js "></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript " src="//гфрд.рф/js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="//гфрд.рф/js/mdb.min.js "></script>
+    <script type="text/javascript" src="//гфрд.рф/js/mailCallBack.js"></script>
+    <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript " src="//гфрд.рф/js/slick-1.8.1/slick/slick.js "></script>
+    <script type="text/javascript " src="//гфрд.рф/js/slick-1.8.1/slick/custom.js "></script>
+
+
+    <script>
+        // SideNav Initialization
+        $(".button-collapse ").sideNav();
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

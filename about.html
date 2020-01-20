@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Гарантийный Фонд Республики Дагестан</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//гфрд.рф//css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link href="//гфрд.рф//css/mdb.css" rel="stylesheet">
+    <link rel="stylesheet" href="//гфрд.рф//css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//гфрд.рф/js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//гфрд.рф/js/slick-1.8.1/slick/slick-theme.css" />
+
+    <script src="//code-ya.jivosite.com/widget/phEnVt6vJk" async></script>
+</head>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-lg red waves-effect waves-light">
+        <i class="fas fa-pencil-alt"></i>
+    </a>
+
+    <ul class="list-unstyled">
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="btn-floating light-blue darken-4 darken-1 waves-effect waves-light"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/garant_fond_rd/" class="btn-floating brown darken-3 darken-1 waves-effect waves-light"><i
+                    class="fab fa-instagram"></i></a></li>
+        <li><a href="mailto:dagfsc@yandex.ru" class="btn-floating success-color-dark darken-1 waves-effect waves-light"><i
+                    class="fas fa-envelope"></i></a></li>
+    </ul>
+</div>
+
+<body class="fixed-sn mdb-skin">
+    <div class="modal fade" id="modalCallBackForm" tabindex="-1" role="dialog" aria-labelledby="myCallBackLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title white-text w-100 font-weight-bold py-2">Обратный звонок</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <form id="contact-form" name="contact-form" action="mailCallBack.php" method="POST">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-contact-name" name="name" class="form-control">
+                            <label for="form-contact-name">Ваше имя</label>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-phone prefix grey-text"></i>
+                            <input type="number" id="form-contact-phone" name="phone" class="form-control onlynumber">
+                            <label for="form-contact-phone">Номер телефона</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-outline-info waves-effect" onclick="document.getElementById('contact-form').submit();" data-dismiss="modal">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light">
+                        <a href="index.html"><img src="/img/tr_logo_fsc1.png" class="img-fluid flex-center"></a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="icons-sm fb-ic" material-tooltip-main data-toggle="tooltip"
+                                data-placement="top" title="Facebook"><i class="fab fa-facebook-f"> </i></a></li>
+                        <li><a href="https://www.instagram.com/garant_fond_rd/" class="icons-sm ins-ic" material-tooltip-main data-toggle="tooltip" data-placement="top" title="Instagram"><i
+                                    class="fab fa-instagram"> </i></a></li>
+                        <li><a href="mailto:dagfsc@yandex.ru" class="icons-sm email-ic" material-tooltip-main data-toggle="tooltip" data-placement="top" title="Написать нам"><i
+                                    class="far fa-envelope"> </i></a></li>
+                    </ul>
+                </li>
+                <!--/Social-->
+
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a a href="index.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a a href="about.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-industry"></i> О фонде</a></li>
+                        <li><a href="news.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-newspaper"></i> Новости</a></li>
+                        <li><a href="predprinimatel.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-users"></i> Предпринимателям</a></li>
+                        <li><a href="bank.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-credit-card"></i> Банкам и партнерам</a></li>
+                        <li><a href="konkurs.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-scroll"></i> Конкурсы</a></li>
+                        <li><a href="history.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-history"></i> История успеха</a></li>
+                        <li><a href="/Tour/vtour/" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-video"></i> 3D Тур по фонду</a></li>
+                        <li><a href="trening.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="fas fa-calendar-check"></i> Расписание тренингов</a></li>
+                        <li><a href="contact.html" class="collapsible-header waves-effect arrow-r"><i
+                                    class="far fa-envelope"></i> Контакты</a></li>
+                    </ul>
+                </li>
+                <div class="sidenav-bg mask-strong"></div>
+            </ul>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a a href="fmrd.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-coins"></i> Фонд микрофинансирования</a></li>
+                    <li><a a href="https://dagincubator.ru/" class="collapsible-header waves-effect arrow-r"><i class="fas fa-business-time"></i>Бизнес-инкубатор</a></li>
+                </ul>
+            </li>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto p_font_index">
+                <p>Гарантийный фонд Республики Дагестан</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a href="https://www.google.com/maps?ll=42.950415,47.516105&z=16&t=m&hl=ru&gl=RU&mapclient=embed&q=%D1%83%D0%BB.+%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0,+120+%D0%9C%D0%B0%D1%85%D0%B0%D1%87%D0%BA%D0%B0%D0%BB%D0%B0+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%94%D0%B0%D0%B3%D0%B5%D1%81%D1%82%D0%B0%D0%BD+367010"><button type="button" class="btn btn-outline-light btn-sm waves-effect"><i
+                            class="fas fa-map-marker left"></i>367010, РД, г.Махачкала улица Гагарина 120, 1
+                                        этаж</button></a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-light btn-sm waves-effect"><i
+                        class="fas fa-phone left"></i>+7 (8722) 51-82-94 | +7 (8722) 51-72-94</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-danger btn-sm waves-effect" data-toggle="modal" data-target="#modalCallBackForm"><i
+                            class="fas fa-clone left"></i>Обратный звонок</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!--/.Double navigation-->
+    <!--Main layout-->
+    <main>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-12">
+
+                <!-- Card -->
+                <div class="card card-cascade wider reverse my-4">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="/img/about_fond/about_fond_main.jpg" alt="Card image cap">
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+
+                        <!-- Classic tabs -->
+                        <div class="classic-tabs ">
+
+                            <ul class="nav primary-color-dark justify-content-md-center" id="myClassicTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link waves-light active show" id="share_info-tab-classic" data-toggle="tab" href="#share_info-classic" role="tab" aria-controls="share_infosk-classic" aria-selected="true"><i
+                                            class="fas fa-tasks fa-2x pb-2" aria-hidden="true"></i><br>Общая
+                                        информация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  waves-light" id="doc-tab-classic" data-toggle="tab" href="#doc-classic" role="tab" aria-controls="doc-classic" aria-selected="false"><i class="fas fa-file fa-2x pb-2"
+                                            aria-hidden="true"></i><br>Документы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-light" id="struct-tab-classic" data-toggle="tab" href="#struct-classic" role="tab" aria-controls="struct-classic" aria-selected="false"><i class="fas fa-stream fa-2x pb-2"
+                                            aria-hidden="true"></i><br>Структура</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-light" id="analitika-tab-classic" data-toggle="tab" href="#analitika-classic" role="tab" aria-controls="analitika-classic" aria-selected="false"><i class="fas fa-chart-bar fa-2x pb-2"
+                                            aria-hidden="true"></i><br>Аналитика</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-light" id="reestr-tab-classic" data-toggle="tab" href="#reestr-classic" role="tab" aria-controls="reestr-classic" aria-selected="false"><i class="fas fa-swatchbook fa-2x pb-2"
+                                            aria-hidden="true"></i><br>Реестр получателей поддержки</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content border-right border-bottom border-left rounded-bottom" id="myClassicTabContent">
+                                <div class="tab-pane fade active show" id="share_info-classic" role="tabpanel" aria-labelledby="share_info-tab-classic">
+                                    <div class="container-fluid">
+                                        <!-- Jumbotron -->
+                                        <div class="jumbotron text-center blue-grey lighten-5">
+                                            <!-- Title -->
+                                            <h2 class="card-title h2">О Фонде</h2>
+                                            <!-- Subtitle -->
+                                            <p class="indigo-text my-4 font-weight-bold text-left">30 ноября 2011 года под №443 вышло Постановление Правительства Республики Дагеcтан "О создании Фонда содействия кредитованию субъектов малого и среднего предпринимательства Республики Дагестан (далее Гарантийный
+                                                фонд)
+                                            </p>
+                                            <!-- Grid row -->
+                                            <div class="row d-flex justify-content-start">
+                                                <!-- Grid column -->
+                                                <div class="col">
+                                                    <p class="card-text text-left">Гарантийный фонд является некоммерческой организацией.</p>
+                                                    <p class="card-text text-left">Учредителем Гарантийного фонда является Правительство Республики Дагестан. От имени Правительства Республики Дагестан функции и полномочия Учредителя осуществляет Агентство по предпринимательству и инвестициям
+                                                        Республики Дагестан.</p>
+                                                    <p class="card-text text-left">Гарантийный фонд был зарегистрирован 23 марта 2012 года как юридическое лицо.</p>
+                                                    <p class="card-text text-left">Текущее руководство деятельностью Гарантийного фонда осуществляет Генеральный директор - Абулмуслимов Рустам Арсланалиевич.</p>
+                                                    <p class="card-text text-left">Фонд учрежден в целях создания благоприятных условий для развития малого и среднего предпринимательства на территории Республики Дагестан, обеспечения равного доступа субъектов малого и среднего предпринимательства
+                                                        к кредитным и финансовым ресурсам коммерческих банков, лизинговых организаций, развития системы гарантий и поручительств по обязательствам субъектов малого предпринимательства, основанных на кредитных
+                                                        договорах, договорах займа и лизинга, развития инфраструктуры финансирования субъектов малого предпринмательства на возвратной основе в форме кредитов, займов, лизинга машин и оборудования.</p>
+                                                </div>
+                                                <!-- Grid column -->
+                                            </div>
+                                        </div>
+                                        <!-- Jumbotron -->
+                                        <div class="col-md-12 mb-4 m-0 p-0">
+                                            <div class="card card-image" style="background-image: url('/img/about_fond/1_1.jpg');">
+                                                <div class="text-white text-center d-flex align-items-center rgba-black-light py-5 px-4">
+                                                    <div>
+                                                        <h3 class="card-title py-3 font-weight-bold"><strong>ОСНОВНЫЕ
+                                                                ЦЕЛИ</strong></h3>
+                                                        <p class="pb-3">Основной целью Фонда является обеспечение доступа субъектам МСП и организациям инфраструктуры поддержки субъектов МСП в Республике Дагестан к кредитным и иным финансовым ресурсам.</p>
+                                                        <div class="row">
+                                                            <div class="col text-left">
+                                                                <div class="card text-white bg-primary mb-3">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white text-white text-monospace">
+                                                                            Развитие в Республике Дагестан системы кредитования субъектов малого и среднего предпринимательства, системы поручительств по обязательствам субъектов малого и среднего предпринимательства, основанных на кредитных договорах, договорах банковских гарантий</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-left">
+                                                                <div class="card text-white bg-primary mb-3">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white text-white text-monospace">
+                                                                            Обеспечение равного доступа субъектов малого и среднего предпринимательства Дагестана к кредитным и иным финансовым ресурсам</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-left">
+                                                                <div class="card text-white bg-primary mb-3">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white text-white text-monospace">
+                                                                            Развитие инфраструктуры финансирования субъектов малого и среднего предпринимательства на возвратной основе в форме кредитов</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-fluid wow fadeIn">
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item  bg-light text-dark">Очевидные преимущества получения кредита в банке под поручительство Гарантийного Фонда</li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i>
+                                                        <span class="text-monospace"> Возможность получения кредита при
+                                                            отсутствии собственного достаточного обеспечения по
+                                                            нему.</span>
+                                                    </li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i> <span class="text-monospace"> Простота схемы получения
+                                                            поручительства</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i> <span class="text-monospace"> Отсутствие необходимости сбора
+                                                            отдельного пакета документов для Фонда (документы в Фонд
+                                                            предоставляются банком из числа полученных от заемщика
+                                                            (субъекта
+                                                            малого и среднего предпринимательства); заемщик подписывает
+                                                            только совместную с банком заявку на предоставление
+                                                            поручительства Фонда и в случае принятия положительного
+                                                            решения — договор поручительства</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Быстрота принятия решения о
+                                                            предоставлении поручительства (решение принимается в срок до
+                                                            3 рабочих дней после поступления заявки)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Критерии предоставления
+                                                            поручительства Фондом являются простыми и понятными и в
+                                                            целом соответствуют критериям выдачи кредита самими
+                                                            банками</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col text-left">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item  bg-light text-dark">Размер и сроки предоставления поручительства Гарантийного Фонда</li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Максимальный размер единовременно
+                                                            выдаваемого поручительства Фонда 25 млн рублей</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Совокупный лимит поручительств Фонда
+                                                            действующий в отношении 1 заемщика не может превышать 25
+                                                            млн. рублей</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Максимальная ответственность Фонда
+                                                            перед Банками не может превышать 70% от суммы основного
+                                                            долга</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Максимальный срок, на который может
+                                                            быть предоставлено поручительство — 84 месяца</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="container-fluid mt-4 wow fadeIn">
+                                        <div class="col-md-12 mb-4 m-0 p-0">
+                                            <div class="card card-image" style="background-image: url('/img/about_fond/1_4.jpg');">
+                                                <div class="text-white text-center d-flex align-items-center rgba-black-light py-5 px-4">
+                                                    <div>
+                                                        <h3 class="card-title py-3 font-weight-bold"><strong>ТРЕБОВАНИЯ
+                                                                К ЗАЕМЩИКАМ</strong></h3>
+                                                        <p class="pb-3">Поручительство Гарантийного Фонда Республики Дагестан предоставляется субъектам малого и среднего предпринимательства по следующим критериям:</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3></h3>
+                                        <div class="row mt-4">
+                                            <div class="col text-left">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item  bg-light text-dark">
+                                                        <span class="badge badge-success">Предоставляется</span>
+                                                    </li>
+
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i> <span class="text-monospace"> Включенным в Единый реестр субъектов
+                                                            малого и среднего предпринимательства</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i> <span class="text-monospace"> Не имеющим просроченной
+                                                            задолженности по начисленным налогам, сборам,
+                                                            соответствующим пеням, штрафам по состоянию на дату подачи
+                                                            заявки на предоставление поручительства</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> В отношении субъекта МСП не
+                                                            применяются процедуры несостоятельности (банкротства), в том
+                                                            числе наблюдение, финансовое оздоровление, внешнее
+                                                            управление, конкурсное производство</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Предоставившим обеспечение
+                                                            исполнения обязательств в объеме не менее 50% от суммы
+                                                            обязательств</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col text-left">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item  bg-light text-dark">
+                                                        <span class="badge badge-danger">Не предоставляется</span>
+                                                    </li>
+                                                    <li class="list-group-item"><i class="fas fa-times red-text"></i>
+                                                        <span class="text-monospace"> При нахождении в стадии
+                                                            ликвидации, реорганизации, а также в случае применения
+                                                            процедур несостоятельности (банкротства), в том числе
+                                                            наблюдения, финансового оздоровления, внешнего управления,
+                                                            конкурсного производства</span>
+                                                    </li>
+                                                    <li class="list-group-item"><i class="fas fa-times red-text"></i>
+                                                        <span class="text-monospace"> При осуществлении
+                                                            предпринимательской деятельности в сфере игорного бизнеса,
+                                                            производства и (или) реализации подакцизных товаров, добычи
+                                                            и (или) реализации полезных ископаемых, за исключением
+                                                            общераспространенных полезных ископаемых</span></li>
+                                                    <li class="list-group-item"><i class="fas fa-times red-text"></i>
+                                                        <span class="text-monospace"> Являющимися участниками соглашения
+                                                            о разделе продукции, кредитными организациями, страховыми
+                                                            организациями (за исключением потребительских кооперативов)
+                                                            инвестиционными фондами, негосударственными пенсионными
+                                                            фондами, профессиональными участниками рынка ценных бумаг,
+                                                            ломбардами</span></li>
+                                                    <li class="list-group-item"><i class="fas fa-times red-text"></i>
+                                                        <span class="text-monospace">При непредоставлениии полного пакета документов, определенного высшим или иным уполномоченным органом Гарантийного Фонд Республики Дагестан, или предоставлении недостоверных сведений и документов </span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="container-fluid m-0 p-0 wow fadeIn">
+                                            <div class="col-md-12 mb-4 m-0 p-0">
+                                                <div class="card card-image" style="background-image: url('/img/about_fond/1_3.jpg');">
+                                                    <div class="text-white text-center d-flex align-items-center justify-content-md-center rgba-black-light py-5 px-4">
+                                                        <div>
+                                                            <h3 class="card-title py-3 font-weight-bold">
+                                                                <strong>ПЕРЕЧЕНЬ ДОКУМЕНТОВ</strong></h3>
+                                                            <p class="pb-3">Для получения поручительства в Гарантийном Фонде Республики Дагестан необходимо предоставить следующий пакет документов:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col text-left m-0 p-0">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item  bg-light text-dark">
+                                                        <span class="badge badge-primary">* Состав документации
+                                                            уточняется Финансовой организаций и Фондом отдельно в каждом
+                                                            конкретном случае</span>
+                                                    </li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i>
+                                                        <span class="text-monospace"><a href="order.html"> Заявка </a>на
+                                                            получение поручительства по форме Фонда</span>
+                                                    </li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i> <span class="text-monospace"> Выписка из решения уполномоченного органа (лица) Банка о предоставлении кредита при условии получения Поручительства Гарантийного фонда, с указанием всех существенных условий предоставления кредита, в том числе наличия обеспечения кредита в размере не менее 50% от суммы выдаваемого кредита; (Банк)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i> <span class="text-monospace"> Копия заключения о финансовом состоянии Заемщика или мотивированного суждения Банка о его финансовом состоянии или решения Банка об отнесении кредита к группе однородных кредитов; (Банк)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копия заявления Заемщика на получение кредита; (Банк)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Анкета заемщика; (Банк)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копия свидетельства о государственной регистрации Заемщика и ИНН; (В налоговой инспекции)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копия выписки из ЕГРЮЛ в отношении Заемщика; (В налоговой инспекции)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копии отчетов в налоговый орган за год на день обращения; (В налоговой инспекции)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копия справки налогового органа, подтверждающей отсутствие на последнюю отчетную дату просроченной задолженности по уплате налогов и сборов перед бюджетами всех уровней или (по усмотрению Банка) письмо Заемщика об отсутствии (наличии) задолженности по платежам в бюджет, заверенное подписью уполномоченного лица и оттиском печати с одновременным предоставлением копии запроса в налоговый орган о выдаче справки, подтверждающей отсутствие просроченной задолженности по уплате налогов и сборов ; (В налоговой инспекции)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Бизнес план; (Составляется заемщиком).</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копия отчета об оценке рыночной стоимости объекта залога; (Банк)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Сведения об открытых и закрытых счетах в кредитных организациях; (Банк)</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Свидетельство о государственной регистрации права или копия договора аренды;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Приказ о вступлении в должность Генерального директора (только для юридических лиц);</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Копии паспортов заемщика, поручителя, залогодателя;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Иные документы по усмотрению Гарантийного Фонда;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Информация по клиенту от бюро кредитных историй (БКИ);</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Договора с контрагентами и поставщиками. (Банк);</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Информация по бенефициарным владельцам (доля в уставном капитале от 25%, на каждого бенефициара копия паспорта);</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Отчет по кассе и кассовая книга или журнал кассира;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Отчет о прибылях и убытках за год;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Выписка по расчётному счёту из банка;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Выписка по каждому счёту клиента;</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Лицензия по виду деятельности организации (копия);</span></li>
+                                                    <li class="list-group-item"><i class="far fa-check-square green-text"></i><span class="text-monospace"> Информация по всем имеющим кредитам и договора лизинга</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="container-fluid m-0 p-0 wow fadeIn">
+                                            <div class="col-md-12 mb-4 m-0 p-0">
+                                                <div class="card card-image" style="background-image: url('/img/about_fond/1_5.jpg');">
+                                                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                        <div>
+                                                            <h3 class="card-title py-3 font-weight-bold">
+                                                                <strong>ВОЗНАГРАЖДЕНИЕ ФОНДА</strong></h3>
+                                                            <div class="row">
+                                                                <div class="col text-left">
+                                                                    <div class="card text-white bg-primary mb-3">
+                                                                        <div class="card-body">
+                                                                            <p class="card-text text-white text-white text-monospace">
+                                                                                Субъект малого и среднего предпринимательства за предоставление поручительства оплачивает Фонду вознаграждение</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col text-left">
+                                                                    <div class="card text-white bg-primary mb-3">
+                                                                        <div class="card-body">
+                                                                            <p class="card-text text-white text-white text-monospace">
+                                                                                Размер вознаграждения составляет от 0,75% до 2% годовых от суммы поручительства Фонда</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col text-left">
+                                                                    <div class="card text-white bg-primary mb-3">
+                                                                        <div class="card-body">
+                                                                            <p class="card-text text-white text-white text-monospace">
+                                                                                Для Заёмщиков, резидентов ТОСЭР (Территория опережающая социально-экономического развития) предусмотренна пониженная ставка вознаграждения по гарантии</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col text-left">
+                                                                    <div class="card text-white bg-primary mb-3">
+                                                                        <div class="card-body">
+                                                                            <p class="card-text text-white text-white text-monospace">
+                                                                                В случае предоставления поручительства Фонда совместно с гарантией АО «Корпорация «МСП» или АО «МСП Банк» ставка вознаграждения составит 0,75% годовых от суммы поручительства, вне зависимости от вида деятельности субъекта малого и среднего предпринимательства
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="doc-classic" role="tabpanel" aria-labelledby="doc-tab-classic">
+                                    <div class="container-fluid text-left">
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Учредительные документы:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/Post%2030.11.2011%209-58.pdf">
+                                                            Постановление о создании фонда</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/ustav.15.05.2017.pdf"> Устав
+                                                            фонда</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регистрационные документы:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/svid_gos_reg.pdf">
+                                                            Свидетельство о государственной регистрации некоммерческой
+                                                            организации</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/INN.pdf"> Свидетельство о
+                                                            постановке на учет в налоговом органе</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/OGRN%20.pdf"> Свидетельство о
+                                                            государственной регистрации</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент конкурсного отбора банков для заключения соглашения о сотрудничестве:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reg_otbor_bank.doc">
+                                                            09.02.2017</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент предоставления поручительств по кредитным договорам:
+                                                    </th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reglament_kredit_dogovor2019.doc">
+                                                        27.12.2018</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент предоставления поручительств по банковской гарантии:
+                                                    </th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reglament_bank_garantii2019.doc">
+                                                            27.12.2018</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент предоставления поручительств по займам:
+                                                    </th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reglament zaim_2019.doc">
+                                                        27.12.2018</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент по гарантийным выплатам:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reg_garant_plata.doc">
+                                                            09.02.2017</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент отбора МФО:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reg_otbor_mfo.pdf">
+                                                            16.01.2018</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент отбора лизинговых организаций:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reg_otbor_lizing_org.doc">
+                                                            09.02.2017</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Регламент предоставления поручительств по лизингу:
+                                                    </th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="far fa-file-pdf"></i><a href="http://гфрд.рф/fond_doc/reglament_lizing_2019.doc">
+                                                            27.12.2018</a></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="struct-classic" role="tabpanel" aria-labelledby="struct-tab-classic">
+                                    <div class="container-fluid text-left">
+                                        <table class="table ">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th width="33%" scope="col">Управление Гарантийным фондом:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Учредитель</th>
+                                                    <td>Высший орган управления Гарантийного фонда, основная функция заключается в обеспечении соблюдения Гарантийным фондом целей, в интересах которых он был создан</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Генеральный директор</th>
+                                                    <td>Единоличный орган фонда, осуществляющий текущее руководство Гарантийным фондом.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Попечительский совет</th>
+                                                    <td>Осуществляет надзор за деятельностью фонда, принятием другими органами фонда решений и обеспечением их исполнения, использованием средств фонда, соблюдением фондом законодательства
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table ">
+                                            <thead class="unique-color white-text">
+                                                <tr>
+                                                    <th scope="col">Структура Гарантийного фонд:</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Учредитель Гарантийного фонда</th>
+                                                    <td>Правительство Республики Дагестан. Функции и полномочия учредителя выполняет Агентство по предпринимательству и инвестициям Республики Дагестан</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Органом Гарантийного фонда, осуществляющим надзор за его деятельностью</th>
+                                                    <td>Попечительский совет Гарантийного фонда</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Председатель Попечительского совета</th>
+                                                    <td>Магомедов Махач Абдулаевич</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Генеральный директор Гарантийного фонда</th>
+                                                    <td>Орган управления, осуществляющий текущее руководство деятельностью Гарантийного фонда</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Генеральный директор</th>
+                                                    <td>Абулмуслимов Рустам Арсланалиевич</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="container-fluid wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="col text-left m-0 p-0">
+                                            <ul class="list-group">
+                                                <li class="list-group-item  unique-color text-white fz14">
+                                                    <span>Структура Гарантийного фонда включает следующие отделы:</span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="badge badge-info">Отдел финансового
+                                                        планирования:</span>
+                                                    <p class="pt-4">Отдел занимается широким спектром важных вопросов, связанных с планированием деятельности Гарантийного фонда, подготовкой финансовой отчетности, технико-экономических обоснований (ТЭО) проектов Гарантийного
+                                                        фонда, бизнес-планов, бюджетов, анализом финансовых результатов деятельности Гарантийного фонда, расчетом лимитов поручительств Гарантийного фонда и иных экономических расчетов.</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="badge badge-info">Отдел правового обеспечения и
+                                                        кадровой работы:</span>
+                                                    <p class="pt-4">Отдел осуществляет подготовку заключений по правовым вопросам, возникающим в деятельности Гарантийного фонда, анализ результатов рассмотрения претензий, судебных и арбитражных дел по заключенным договорам,
+                                                        разработку новых внутренних нормативных документов Гарантийного фонда.</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="badge badge-info">Отдел по работе с заемщиками:</span>
+                                                    <p class="text-monospace pt-4"><i class="fas fa-check green-text"></i> Отдел взаимодействует с банками и субъектами малого и среднего предпринимательства по заключаемым договорам</p>
+                                                </li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i>
+                                                    <span class="text-monospace"> Отдел взаимодействует с банками и
+                                                        субъектами малого и среднего предпринимательства по заключаемым
+                                                        договорам</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i>
+                                                    <span class="text-monospace"> Занимается оценкой качества
+                                                        предоставленных заемщиками документов</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i><span class="text-monospace"> Ведет учет и отчетность по заключаемым
+                                                        договорам</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i><span class="text-monospace"> Проводит анализ финансово-хозяйственной
+                                                        деятельности заемщиков</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i><span class="text-monospace"> Консультирует субъектов малого и
+                                                        среднего предпринимательства по вопросам, касающимся
+                                                        деятельности Фонда и реализуемой им программы, а также иным
+                                                        формам финансово-имущественной поддержки субъектов малого и
+                                                        среднего предпринимательства, осуществляемой за счет
+                                                        Федерального и Республиканского бюджетов</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i><span class="text-monospace"> Обеспечивает разработку методических
+                                                        инструкций Фонда по улучшению взаимодействия Фонда с финансовыми
+                                                        организациями и заемщиками</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i><span class="text-monospace"> Анализирует и обобщает результаты
+                                                        деятельности Фонда</span></li>
+                                                <li class="list-group-item"><i class="fas fa-check green-text"></i><span class="text-monospace"> Выезжает на акты осмотра СМСП по месту
+                                                        осуществления деятельности</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="analitika-classic" role="tabpanel" aria-labelledby="analitika-tab-classic">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <h4><strong>Структура Гарантийного фонда</strong></h4>
+                                                <hr>
+                                                <p>За весь период деятельности Фондом содействия кредитованию субъектов малого и среднего предпринимательства Республики Дагестан (далее - Гарантийный фонд) по кредитным обязательствам субъектов малого и среднего
+                                                    предпринимательства было предоставлено <strong>269</strong> поручительств</p>
+                                                <p>Общая сумма выданных кредитов субъектам малого и среднего предпринимательства под поручительство Гарантийного фонда составила - <strong>1 855 092 758 </strong> рублей. Объем предоставленных поручительств
+                                                    по обязательствам субъектов малого и среднего предпринимательства составил - <strong>791 292 507</strong> рублей, что позволило сохранить <strong>820</strong> рабочих мест.</p>
+                                                <p>Сумма исполненных Гарантийным фондом обязательств по договорам поручительства в общей сумме составляет - <strong>42 211</strong> тыс. рублей. Средства взысканные в порядке регресса выплаченные по заключенным
+                                                    договорам поручительства - <strong>6 778 555</strong> рублей.
+                                                </p>
+                                                <h4><strong>Условия предоставления поручительства</strong></h4>
+                                                <hr>
+                                                <p>В случае, если у Вас недостаточно залогового обеспечения по кредиту, Гарантийный фонд РД предоставляет поручительства на следующих условиях.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="container-fluid text-left">
+                                        <div class="row">
+                                            <div class="col">
+                                                <table class="table">
+                                                    <thead class="unique-color white-text">
+                                                        <tr>
+                                                            <th scope="col">Критерий</th>
+                                                            <th scope="col">Предлагаемые условия</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Сумма поручительства</th>
+                                                            <td>До 25 млн. рублей</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Сумма кредита</th>
+                                                            <td>от 300 тыс. рублей и более</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Срок кредита</th>
+                                                            <td>от 3 месяцев и не более 7 лет</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Доля поручительства</th>
+                                                            <td>Не более 50% от суммы кредита, банковской гарантии</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Сумма вознаграждения</th>
+                                                            <td><a href="/pred/prod_line.PDF"><i
+                                                                        class="fa fa-arrow-down red-text pr-2"
+                                                                        aria-hidden="true"></i><strong>Продуктовая
+                                                                        линейка</strong></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Сроки рассмотрения</th>
+                                                            <td>3 - рабочих дня</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <blockquote class="blockquote bq-primary">
+                                                    <p class="mb-0">За период своей деятельности Гарантийный фонд предоставил поручительства предпринимателям более 37 городов и районов Республики
+                                                    </p>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="container-fluid text-left">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4><strong>Финансовая поддержка субъектов МСП*</strong></h4>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Количество заявок на рассмотрении, шт:
+                                                                </th>
+                                                                <td scope="col">00002
+                                                                </td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">Количество поручительств, шт:</th>
+                                                                <td>000269</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Общий объем гарантийной поддержки, тыс.руб.:
+                                                                </th>
+                                                                <td>791 292 507 </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Объем кредитов с гарантийной поддержкой, тыс.руб.:
+                                                                </th>
+                                                                <td>1 855 092 758 </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <blockquote class="blockquote bq-primary">
+                                            <p class="mb-0">* - по состоянию на 15.05.2019г</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reestr-classic" role="tabpanel" aria-labelledby="reestr-tab-classic">
+                                    <div class="container-fluid text-left">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3><strong>Реестр получателей поддержки</strong></h3>
+                                                <hr>
+
+                                                <table class="table text-nowrap">
+                                                    <thead class="unique-color white-text">
+                                                        <tr>
+                                                            <th scope="col">Год</th>
+                                                            <th scope="col">I - квартал</th>
+                                                            <th scope="col">II - квартал</th>
+                                                            <th scope="col">III - квартал</th>
+                                                            <th scope="col">IV - квартал</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">2014</th>
+                                                            <td><a href="/reestr/reestr I kv 2014.xlsx">Скачать</a></td>
+                                                            <td><a href="/reestr/reestr II kv 2014.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr III kv 2014.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr IV kv 2014.xlsx">Скачать</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2015</th>
+                                                            <td><a href="/reestr/reestr I kv 2015 .xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr II kv 2015 .xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr IV kv 2015.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr IV kv 2015.xlsx">Скачать</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2016</th>
+                                                            <td><a href="/reestr/reestr I kv 2016.xlsx">Скачать</a></td>
+                                                            <td><a href="/reestr/reestr II kv 2016.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr III kv 2016.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr za IV kv 2016.xlsx">Скачать</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table class="table">
+                                                    <thead class="unique-color white-text">
+                                                        <tr>
+                                                            <th scope="col">Год</th>
+                                                            <th scope="col">Январь</th>
+                                                            <th scope="col">Февраль</th>
+                                                            <th scope="col">Март</th>
+                                                            <th scope="col">Апрель</th>
+                                                            <th scope="col">Май</th>
+                                                            <th scope="col">Июнь</th>
+                                                            <th scope="col">Июль</th>
+                                                            <th scope="col">Август</th>
+                                                            <th scope="col">Сентябрь</th>
+                                                            <th scope="col">Октябрь</th>
+                                                            <th scope="col">Ноябрь</th>
+                                                            <th scope="col">Декабрь</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">2017</th>
+                                                            <td><a href="/reestr/reestr 01.01.2017г.-31.01.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.02.2017г.-28.02.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.03.2017г.-31.03.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.04.2017г.-30.04.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.05.2017г.-31.05.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.06.2017г.-30.06.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.07.2017г.-31.07.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.08.2017г.-31.08.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.09.2017г.-30.09.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.10.2017г.-31.10.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.11.2017г.-30.11.docx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.12.2017г.-31.12.docx">Скачать</a>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2018</th>
+                                                            <td><a href="/reestr/reestr 01.01.2018г.-31.01.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.02.2018г.-27.02.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.03.2018г.-31.03.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.04.2018г.-30.04.xlsx">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.05.2018г.-31.05.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.06.2018г.-30.06.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.07.2018г.-31.07.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.08.2018г.-31.08.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr 01.09.2018г.-30.09.xls">Скачать</a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="/reestr/reestr_01.10.2018-31.10.2018_new.xls">Скачать</a></td>
+                                                            <td>
+                                                                <a href="/reestr/reestr_01.11.2018-30.11.2018_new.xls">Скачать</a></td>
+                                                            <td>
+                                                                <a href="/reestr/reestr_01.12.2018-31.12.2018_new.xls">Скачать</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2019</th>
+                                                            <td><a href="/reestr/reestr_01.01.2019 - 31.01_new.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr_01.02.2019 - 28.02_new.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr_01.03.2019 - 31.03_new.xls">Скачать</a>
+                                                            </td>
+                                                            <td><a href="/reestr/reestr_01.04.2019 - 30.04_new.xls">Скачать</a></td>
+                                                            <td><a href="/reestr/reestr 01.05.2019-31.05.xls">Скачать</a></td>
+                                                            <td><a href="/reestr/reestr 01.06.2019-30.06.xls">Скачать</a></td>
+                                                            <td><a href="/reestr/reest_01.07.2019.xls">Скачать</a></td>
+                                                            <td><a href="/reestr/reestr_01.08.2019 - 31.08_new.xls">Скачать</a></td>
+                                                            <td>
+                                                                <a href="/reestr/reest_01.09.2019.xls">Скачать</a></td>
+                                                            <td>Скачать</td>
+                                                            <td>Скачать</td>
+                                                            <td>Скачать</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Classic tabs -->
+            </div>
+        </div>
+        <!-- Card -->
+        <!--Grid column-->
+
+
+
+    </main>
+    <!--/Main layout-->
+    <!--Footer-->
+    <footer class="page-footer text-center text-md-left pt-4">
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-3">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Гарантийный Фонд Республики Дагестан</h5>
+                    <p>Основной целью Фонда является обеспечение доступа субъектам МСП и организациям инфраструктуры поддержки субъектов МСП в Республике Дагестан к кредитным и иным финансовым ресурсам.</p>
+                </div>
+                <!--/.First column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Second column-->
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Федеральные</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://government.ru/"><small>Правительство Российской Федерации</small></a></li>
+                        <li><a href="http://kremlin.ru/"><small>Сайт президента Российской Федерации</small></a></li>
+                        <li><a href="http://economy.gov.ru/minec/main"><small>Министерство экономики РФ</small></a></li>
+                        <li><a href="http://www.gov.ru/"><small>Официальные органы власти</small></a></li>
+                        <li><a href="https://corpmsp.ru/"><small>Корпорация МСП</small></a></li>
+                        <li><a href="https://smbn.ru/"><small>Портал Бизнес-Навигатор МСП</small></a></li>
+                        <li><a href="https://www.mspbank.ru/"><small>МСП Банк</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Third column-->
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Республиканские</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.e-dag.ru/"><small>Правительство республики Дагестан</small></a></li>
+                        <li><a href="http://president.e-dag.ru/"><small>Глава республики Дагестан</small></a></li>
+                        <li><a href="http://www.minec-rd.ru/"><small>Министерство экономики Республики
+                                    Дагестан</small></a></li>
+                        <li><a href="http://mspinvestrd.ru/"><small>Агентство по предпринимательству и инвестициям
+                                    РД</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Fourth column-->
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Инфраструктура поддержки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://dagincubator.ru"><small>Бизнес-инкубатор РД</small></a></li>
+                        <li><a href="http://xn--80aaablegdnj0dg0cep.xn--p1ai/"><small>Фонд «Дагестанская лизинговая
+                                    компания»</small></a></li>
+                        <li><a href="http://fmrd.ru/"><small>Фонд микрофинансирования РД</small></a></li>
+                        <li><a href="http://cppdag.ru/"><small>Центр поддержки предпринимательства РД</small></a></li>
+                        <li><a href="http://mspinvestrd.ru/about/25"><small>ГАУ РД «Учебно-производственный
+                                    комбинат»</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+        <!--Social buttons-->
+        <div class="social-section text-center">
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item"><a a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="btn btn-fb"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a a href="https://www.instagram.com/garant_fond_rd/" class="btn btn-ins"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a a href="mailto:dagfsc@yandex.ru" class="btn btn-email"><i
+                            class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <!--/.Social buttons-->
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid"><a href="mailto:dejavood@gmail.com"> Azdar Mamaev</a></div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="//гфрд.рф/js/jquery-3.3.1.min.js"></script>
+    <!-- Tooltips -->
+    <script type="text/javascript" src="//гфрд.рф/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="//гфрд.рф/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="//гфрд.рф/js/mdb.min.js"></script>
+    <script type="text/javascript" src="//гфрд.рф/js/mailCallBack.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//гфрд.рф/js/slick-1.8.1/slick/slick.js"></script>
+    <script type="text/javascript" src="//гфрд.рф/js/slick-1.8.1/slick/custom.js"></script>
+
+
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Гарантийный Фонд Республики Дагестан</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//гфрд.рф//css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link href="//гфрд.рф//css/mdb.css" rel="stylesheet">
+    <link rel="stylesheet" href="//гфрд.рф//css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//гфрд.рф/js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//гфрд.рф/js/slick-1.8.1/slick/slick-theme.css" />
+    <script src="//code-ya.jivosite.com/widget/phEnVt6vJk" async></script>
+</head>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-lg red waves-effect waves-light">
+        <i class="fas fa-pencil-alt"></i>
+    </a>
+
+    <ul class="list-unstyled">
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="btn-floating light-blue darken-4 darken-1 waves-effect waves-light"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/garant_fond_rd/" class="btn-floating brown darken-3 darken-1 waves-effect waves-light"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="mailto:dagfsc@yandex.ru" class="btn-floating success-color-dark darken-1 waves-effect waves-light"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+</div>
+
+<body class="fixed-sn mdb-skin">
+    <div class="modal fade" id="modalCallBackForm" tabindex="-1" role="dialog" aria-labelledby="myCallBackLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title white-text w-100 font-weight-bold py-2">Обратный звонок</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <form id="contact-form" name="contact-form" action="mailCallBack.php" method="POST">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-contact-name" name="name" class="form-control">
+                            <label for="form-contact-name">Ваше имя</label>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-phone prefix grey-text"></i>
+                            <input type="number" id="form-contact-phone" name="phone" class="form-control onlynumber">
+                            <label for="form-contact-phone">Номер телефона</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-outline-info waves-effect" onclick="document.getElementById('contact-form').submit();" data-dismiss="modal">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light">
+                        <a href="index.html"><img src="/img/tr_logo_fsc1.png" class="img-fluid flex-center"></a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="icons-sm fb-ic" material-tooltip-main data-toggle="tooltip"
+                                data-placement="top" title="Facebook"><i class="fab fa-facebook-f"> </i></a></li>
+                        <li><a href="https://www.instagram.com/garant_fond_rd/" class="icons-sm ins-ic" material-tooltip-main data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram"> </i></a></li>
+                        <li><a href="mailto:dagfsc@yandex.ru" class="icons-sm email-ic" material-tooltip-main data-toggle="tooltip" data-placement="top" title="Написать нам"><i class="far fa-envelope"> </i></a></li>
+                    </ul>
+                </li>
+                <!--/Social-->
+
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a a href="index.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a a href="about.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-industry"></i> О фонде</a></li>
+                        <li><a href="news.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-newspaper"></i> Новости</a></li>
+                        <li><a href="predprinimatel.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-users"></i> Предпринимателям</a></li>
+                        <li><a href="bank.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-credit-card"></i> Банкам и партнерам</a></li>
+                        <li><a href="konkurs.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-scroll"></i> Конкурсы</a></li>
+                        <li><a href="history.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-history"></i> История успеха</a></li>
+                        <li><a href="/Tour/vtour/" class="collapsible-header waves-effect arrow-r"><i class="fas fa-video"></i> 3D Тур по фонду</a></li>
+                        <li><a href="trening.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-calendar-check"></i> Расписание тренингов</a></li>
+                        <li><a href="contact.html" class="collapsible-header waves-effect arrow-r"><i class="far fa-envelope"></i> Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a a href="fmrd.html" class="collapsible-header waves-effect arrow-r"><i class="fas fa-coins"></i> Фонд микрофинансирования</a></li>
+                    <li><a a href="https://dagincubator.ru" class="collapsible-header waves-effect arrow-r"><i class="fas fa-business-time"></i>Бизнес-инкубатор</a></li>
+                </ul>
+            </li>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto p_font_index">
+                <p>Гарантийный фонд Республики Дагестан</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a href="https://www.google.com/maps?ll=42.950415,47.516105&z=16&t=m&hl=ru&gl=RU&mapclient=embed&q=%D1%83%D0%BB.+%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0,+120+%D0%9C%D0%B0%D1%85%D0%B0%D1%87%D0%BA%D0%B0%D0%BB%D0%B0+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%94%D0%B0%D0%B3%D0%B5%D1%81%D1%82%D0%B0%D0%BD+367010"><button type="button" class="btn btn-outline-light btn-sm waves-effect"><i
+                            class="fas fa-map-marker left"></i>367010, РД, г.Махачкала улица Гагарина 120, 1
+                                        этаж</button></a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-light btn-sm waves-effect"><i
+                            class="fas fa-phone left"></i>+7 (8722) 51-82-94</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-danger btn-sm waves-effect" data-toggle="modal" data-target="#modalCallBackForm"><i
+                            class="fas fa-clone left"></i>Обратный звонок</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!--/.Double navigation-->
+    <!--Main layout-->
+    <main>
+        <div class="container-fluid m-0 p-0">
+            <!-- Jumbotron -->
+            <div class="card card-image" style="background-image: url(/news/main1.jpg);">
+                <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                    <div class="py-5">
+                        <!-- Content -->
+                        <h1 class="card-title display-1 my-4 py-2">Новости</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Jumbotron -->
+        </div>
+        <div class="container-fluid mt-4 mb-4">
+            <section class="py-4">
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/30.12.2019/2020.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гарантийный Фонд Республики Дагестан поздравляет с Новым 2020 Годом !!!</strong>
+                        </h3>
+                        <p class="grey-text">Наш коллектив поздравляет Вас с Новым 2020 годом. Хотим пожелать Вам ровной и благополучной дороги к успеху, четких целей и перспективных планов, неугасаемых сил и дружбы коллектива, семейного счастья и верного благополучия, высокого достатка и неизменной удачи. Пусть новогодняя ночь исполнит желание каждого из Вас и подарит всем чудесное настроение.
+                            
+                            </p>
+                        <p>Источник:
+                            <a href="index.html" class="font-weight-bold dark-grey-text">Гарантийный Фонд РД</a>, 30/12/2019</p>
+                   
+                    </div>
+                    <!--Grid column-->
+             
+
+                </div>
+            
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/08.11.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Банк России запустил опрос среди представителей малого и среднего предпринимательства – юридических лиц (далее – МСП) для определения уровня востребованности финансовых услуг, удовлетворенности этими услугами и работой российских финансовых организаций, предоставляющих эти услуги.</strong>
+                        </h3>
+                        <p class="grey-text">Для участия в опросе необходимо перейти по ссылке: <a href="https://forms.yandex.ru/u/5d394d8d6b6a50369fbfad0b/">https://forms.yandex.ru/u/5d394d8d6b6a50369fbfad0b/</a> и заполнить электронную форму анкеты</p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 08/11/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news24">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel24" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel24">Банк России запустил опрос среди представителей малого и среднего предпринимательства – юридических лиц (далее – МСП) для определения уровня востребованности финансовых услуг, удовлетворенности этими услугами и работой
+                                        российских финансовых организаций, предоставляющих эти услуги.</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <p>Его результаты помогут Банку России определить направление развития финансового рынка Российской Федерации в части повышения доступности и качества финансовых услуг для субъектов МСП. Результаты будут использоваться
+                                        только в агрегированном виде.</p>
+                                    <p>Опрос проводится в соответствии с программой обследований Банка России1 до 15 декабря 2019 года.</p>
+                                    <p>Для участия в опросе необходимо перейти по ссылке: <a href="https://forms.yandex.ru/u/5d394d8d6b6a50369fbfad0b/">https://forms.yandex.ru/u/5d394d8d6b6a50369fbfad0b/</a> и заполнить электронную форму анкеты</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+
+                              <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/05.11.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Набор слушателей на программу профессиональной переподготовки управленческих кадров "Лидеры производительности"</strong>
+                        </h3>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 05/11/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" href="/news/05.11.2019/47-3261.pdf">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/04.11.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гарантийный фонд Республики Дагестан поздравляет с праздником - Днем народного единства !</strong>
+                        </h3>
+                        <p class="grey-text">Искренне поздравляем вас с национальным праздником
+                        </p>
+                        <p>Источник:
+                            <a href="index.html" class="font-weight-bold dark-grey-text">Гарантийный Фонд РД</a>, 04/11/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news22">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel22" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel22">Гарантийный фонд Республики Дагестан поздравляет с праздником - Днем народного единства !»</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Искренне поздравляем вас с национальным праздником
+                                    </p>
+                                    <p>Истоки праздника восходят к героическим событиям 1612 года. Тогда люди разных вер, национальностей и сословий, объединившись ради одной цели – защиты Отечества, позволили России сохранить свою державность, самобытность,
+                                        национальное единство.</p>
+                                    <p>Эта дата в истории нашей страны является одной из значимых, считаясь своеобразной точкой отсчета создания крепкого российского государства.</p>
+                                    <p>В этот День мы отдаем должное военной доблести предков и воспринимаем этот День как праздник добра и любви, заботы о ближних, поддержки нуждающихся.</p>
+                                    <p>По убеждению религиозных деятелей страны, инициаторов возрождения национального праздника 4 ноября, сегодня на нас лежит общая историческая ответственность: сберечь бесценное наследие, завещанное нам предками, сохранить
+                                        наше Отечество, приумножить его духовный и экономический потенциал.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/24.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Приглашаем предпринимателей, заинтересованных в продвижении бизнеса при
+                                    помощи событийного маркетинга, посетить открытый мастер-класс ЭКСПОшколы Елены
+                                    Конвисар «Эффективный выставочный маркетинг»</strong>
+                        </h3>
+                        <p class="grey-text">Участие бесплатное при условии предварительной регистрации.
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 24/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" href="/news/24.10.2019/3.docx">Программа мероприятия</a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/21.10.2019/Gadji_gasanov.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гаджи Гасанов «Кадастровая оценка должна быть посильной для предпринимателя, позволяя рентабельно вести бизнес»</strong>
+                        </h3>
+                        <p class="grey-text">Гаджи Гасанов: «Кадастровая оценка должна быть посильной для предпринимателя, позволяя рентабельно вести бизнес»
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 21/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news20">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel20" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel20">Гаджи Гасанов «Кадастровая оценка должна быть посильной для предпринимателя, позволяя рентабельно вести бизнес»</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Кадастровая оценка, из которой потом формируется налог на землю, и цена объектов коммерческой недвижимости должны быть реальными, посильными для предпринимателя. Об этом, комментируя промежуточные итоги по ГКО, заявил
+                                        врио руководителя Агентства по предпринимательству и инвестициям региона Гаджи Гасанов.
+                                    </p>
+                                    <p>По его мнению, кадастровая оценка должна быть ровно на той верхней планке, которая позволяет рентабельно, прибыльно вести свой бизнес.</p>
+                                    <p>«Безусловно необходимо вовлечение в хозяйственный оборот земельных участков, находящихся в государственной собственности для эффективного использования. Низкая арендная стоимость, низкая кадастровая стоимость и низкие
+                                        налоговые платежи с одной стороны увеличивают безответственное отношение граждан. Потому что земли, здания и сооружения могут годами стоять, абсолютно не вовлекаясь в хозяйственный оборот, грубо говоря, не участвуя
+                                        в экономике республики и страны в целом. При всем при этом, развитие невозможно, если душить бизнес», - подчеркнул Гасанов.</p>
+                                    <p>Глава Агентства отметил, что предприниматель должен понимать, что для него эта процедура должна быть максимально прозрачной. «Наша задача – не решать вопросы точечно, когда выяснилось, что какой-то объект стал дороже
+                                        и он не совсем комфортен или совсем некомфортен для бизнесмена, а выработать какие-то системные решения совместно с уполномоченным органом для того, чтобы предупредить возможные эти просчеты.</p>
+                                    <p>Мы хотим, чтобы условия для развития предпринимательства были максимально комфортными. Но и бизнес должен понимать, что земля и имущество всегда должны быть в обороте. Цена на них не должна быть занижена, она должна
+                                        быть корректной, чтобы работа предпринимателя была комфортной», - констатировал руководитель ведомства.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/21.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Помещения на льготных условиях предложили предпринимателям в бизнес-инкубаторах Дагестана</strong>
+                        </h3>
+                        <p class="grey-text">Конкурсный отбор среди субъектов малого предпринимательства для предоставления им на льготных условиях офисных помещений в бизнес- инкубаторах региона объявили в республике, сообщает пресс-служба Агентства по предпринимательству
+                            и инвестициям Дагестана.
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 21/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news19">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel19" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel19">Помещения на льготных условиях предложили предпринимателям в бизнес-инкубаторах Дагестана</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Конкурсный отбор среди субъектов малого предпринимательства для предоставления им на льготных условиях офисных помещений в бизнес- инкубаторах региона объявили в республике, сообщает пресс-служба Агентства по предпринимательству
+                                        и инвестициям Дагестана.
+                                    </p>
+                                    <p>Помещения предоставляются в бизнес-инкубаторах Махачкалы, Каспийска, Дербента, Кизляра и Кизилюрта. Кроме того, доступны офисные и производственные помещения в республиканском производственно- инновационном бизнес-инкубаторе
+                                        «Турали».
+                                    </p>
+                                    <p>Рыночная стоимость аренды одного квадратного метра в год в бизнес- инкубаторе по улице Гагарина 120 в Махачкале составляет 4 тыс. 800 рублей. Льготы предлагаются на первые три года с момента регистрации бизнеса. Так,
+                                        в первый год бизнесмен оплачивает лишь 20% стоимости аренды. То есть ему предоставляется «скидка» в 80%, во второй год – 60%, в третий – 40% от стоимости аренды за каждый квадрат.</p>
+                                    <p>К примеру, в первый год предприниматели берут в аренду квадратный метр помещения в бизнес-инкубаторе, расположенном по проспекту Гагарина 120 в Махачкале за 80 рублей, во второй год за 160 рублей, а в третий – за 240
+                                        рублей. В Туралях бизнесмен может снять офисное помещение в первый год заплатив 23 рубля в месяц год – за 69 рублей.</p>
+                                    <p>Отметим, что по последним данным на льготных условиях в бизнес- инкубаторах обслуживается около 50 резидентов. Помимо помощи с арендой им оказывается комплексная информационно-консультационная помощь от специалистов
+                                        Центра поддержки предпринимательства Дагестана. Также они могут бесплатно участвовать в разных обучающих семинарах и программах ЦПП и использовать консультаций.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/15.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Агентство по предпринимательству и инвестициям Республики Дагестан сообщает о проведении 28 ноября - 1 декабря 2019 в Стамбуле ежегодной международной выставки халяльной индустрии 7th OIC Halal Expo Istambul 2019, которая пройдет в рамках V World Halal Summit</strong>
+                        </h3>
+                        <p class="grey-text">Главная цель выставки - развитие, продвижение и популяризация халяльной индустрии за пределами Российской Федерации. Участие в данной выставке - это возможность для российских предприятий выйти на мировой рынок и расширить рынки
+                            сбыта.
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 15/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news18">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel18" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel18">Агентство по предпринимательству и инвестициям Республики Дагестан сообщает о проведении 28 ноября - 1 декабря 2019 в Стамбуле ежегодной международной выставки халяльной индустрии 7th OIC Halal Expo Istambul 2019, которая
+                                        пройдет в рамках V World Halal Summit</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Главная цель выставки - развитие, продвижение и популяризация халяльной индустрии за пределами Российской Федерации. Участие в данной выставке - это возможность для российских предприятий выйти на мировой рынок и расширить
+                                        рынки сбыта.
+                                    </p>
+                                    <p>Мероприятие организовано компанией Discover Events в сотрудничестве с Исламским Центром Развития Торговли (ICDT) и Институтом стандартизации и метрологии исламским стран (SMIIC), при поддержке государственных институтов
+                                        и министерств Турции.</p>
+                                    <p>В 2019 году в выставке примут участие 35 стран, среди которых Австрия, Бельгия, Египет, Франция, Иордания, Ливан, Марокко, Россия, Испания, Таиланд, Великобритания, США и многие другие</p>
+                                    <p>По вопросам участия обращаться: Нияскулова Айгуль Галиевна, +7(937) 779-90-30, <a href="mailto:specialist@halalrt.com">specialist@halalrt.com</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/18.10.2019/kirov.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>2-4 ноября 2019 года в г. Киров пройдет IX межрегиональный форум НХП "Кладовая ремесел"</strong>
+                        </h3>
+                        <p class="grey-text">Основной целью мероприятия является популяризация народных художественных промыслов Кировской области и других регионов России.
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 18/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" href="/news/18.10.2019/47-3051.pdf" data-target="#news17">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <hr class="mb-5">
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/18.10.2019/Budget.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>28-29 октября 2019 года Издательский дом "Бюджет" на базе учебного центра "Бюджет" проводит семинар "Новое в управлении и бюджетном законодательстве на местном уровне"</strong>
+                        </h3>
+                        <p class="grey-text">В качестве докладчиков выступят ведущие эксперты страны и специалисты Минфина России
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 18/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" href="/news/18.10.2019/47-3052.pdf" data-target="#news17">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/15.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Агентство по предпринимательству и инвестициям Республики Дагестан сообщает о проведении 28 ноября - 1 декабря 2019 в Стамбуле ежегодной международной выставки халяльной индустрии 7th OIC Halal Expo Istambul 2019, которая пройдет в рамках V World Halal Summit</strong>
+                        </h3>
+                        <p class="grey-text">Главная цель выставки - развитие, продвижение и популяризация халяльной индустрии за пределами Российской Федерации. Участие в данной выставке - это возможность для российских предприятий выйти на мировой рынок и расширить рынки
+                            сбыта.
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 15/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news21">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel21" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel21">Агентство по предпринимательству и инвестициям Республики Дагестан сообщает о проведении 28 ноября - 1 декабря 2019 в Стамбуле ежегодной международной выставки халяльной индустрии 7th OIC Halal Expo Istambul 2019, которая
+                                        пройдет в рамках V World Halal Summit</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Главная цель выставки - развитие, продвижение и популяризация халяльной индустрии за пределами Российской Федерации. Участие в данной выставке - это возможность для российских предприятий выйти на мировой рынок и расширить
+                                        рынки сбыта.
+                                    </p>
+                                    <p>Мероприятие организовано компанией Discover Events в сотрудничестве с Исламским Центром Развития Торговли (ICDT) и Институтом стандартизации и метрологии исламским стран (SMIIC), при поддержке государственных институтов
+                                        и министерств Турции.</p>
+                                    <p>В 2019 году в выставке примут участие 35 стран, среди которых Австрия, Бельгия, Египет, Франция, Иордания, Ливан, Марокко, Россия, Испания, Таиланд, Великобритания, США и многие другие</p>
+                                    <p>По вопросам участия обращаться: Нияскулова Айгуль Галиевна, +7(937) 779-90-30, <a href="mailto:specialist@halalrt.com">specialist@halalrt.com</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/14.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Министерство по земельным и имущественным отношениям Республики Дагестан</strong>
+                        </h3>
+                        <p class="grey-text">Министерство по земельным и имущественным отношениям Республики Дагестан извещает о том, что на сайте Росеестра <a href="https://rosreestr.ru/site/">(rosreestr.ru)</a>в фонде данных государственной кадастровой оценки, а также на
+                            сайте Государственного бюджетного учреждения Республики Дагестан «Дагестанское бюро по технической инвентаризации и кадастровой оценке» (ГБУ РД «Дагтехкадастр») <a href="https://xn--80acfcx3d.xn--p1ai/">(дагбти.рф)</a> в разделе
+                            «Кадастровая оценка» размещены промежуточные отчетные документы по государственной кадастровой оценке объектов капитального строительства, земель сельскохозяйственного назначения, населеных пунктов, расположенных на территории
+                            Республики Дагестан.</p>
+                        <p>Источник:
+                            <a href="https://estate.e-dag.ru/" class="font-weight-bold dark-grey-text">Министерство по земельным и имущественным отношениям Республики Дагестан </a>, 14/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news17">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel17">Министерство по земельным и имущественным отношениям Республики Дагестан</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Министерство по земельным и имущественным отношениям Республики Дагестан извещает о том, что на сайте Росеестра <a href="https://rosreestr.ru/site/">(rosreestr.ru)</a>в фонде данных государственной кадастровой оценки,
+                                        а также на сайте Государственного бюджетного учреждения Республики Дагестан «Дагестанское бюро по технической инвентаризации и кадастровой оценке» (ГБУ РД «Дагтехкадастр») <a href="https://xn--80acfcx3d.xn--p1ai/">(дагбти.рф)</a>                                        в разделе «Кадастровая оценка» размещены промежуточные отчетные документы по государственной кадастровой оценке объектов капитального строительства, земель сельскохозяйственного назначения, населеных пунктов, расположенных
+                                        на территории Республики Дагестан.</p>
+                                    <p>В период с 03.09.2019 г. по 22.10.2019 г. все заинтересованные лица (граждане, индивидуальные предприниматели, юридические лица, органы местного самоуправления муниципальных образований Республики Дагестан, исполнительные
+                                        органы государственной власти Российской Федерации, а также Республики Дагестан) могут представить свои замечания к промежуточным отчетным документам. </p>
+                                    <p>Замечания к промежуточным отчетным документам могут быть представлены в Государственное бюджетное учреждение Республики Дагестан «Дагестанское бюро по технической инвентаризации и кадастровой оценке» (ГБУ РД «Дагтехкадастр»)
+                                        лично, почтовым отправлением или с использованием сети «Интернет» (367000, г. Махачкала, ул. Абубакарова, 18, электронный адрес: <a href="mailto:zgko@dagbti.com">zgko@dagbti.com</a>, а также в ГАУ РД «Многофункциональный
+                                        центр предоставления государственных и муниципальных услуг в Республике Дагестан» и территориальных отделах лично. </p>
+                                    <p>Не подлежат рассмотрению замечания к промежуточным отчетным документам, не соответствующие требованиям, установленным статьей 14 Федерального закона от 03.07.2016 г. № 237-ФЗ «О государственной кадастровой оценке».</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/09.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Анкета для предприятий и организаций по вопросам повышения эффективности поддержки цифровизации</strong>
+                        </h3>
+                        <p class="grey-text">Для участия в опросе необходимо перейти по ссылке: <a href="https://forms.yandex.ru/u/5d8d8e5a4398963b3f101305/">https://forms.yandex.ru/u/5d8d8e5a4398963b3f101305/</a> и заполнить электронную форму анкеты</p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 09/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news16">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel16" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel16">Анкета для предприятий и организаций по вопросам повышения эффективности поддержки цифровизации</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Для участия в опросе необходимо перейти по ссылке: <a href="https://forms.yandex.ru/u/5d8d8e5a4398963b3f101305/">https://forms.yandex.ru/u/5d8d8e5a4398963b3f101305/</a> и заполнить электронную форму анкеты</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/07.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>14 октября 2019 года в Республике Дагестан прекратится аналоговое вещание общедоступных телерадиоканалов (центральное телевидение) и начнется цифровое телевидение</strong>
+                        </h3>
+                        <p class="grey-text">План поэтапного отключения аналогового телевидения в России утвержден решением Правительственной комиссии Российской Федерации по развитию телерадиовещания Заблаговременно убедитесь, что Ваш телевизор принимает цифровое телевидение
+                            20 центральных телеканалов можно будет смотреть только при помощи цифровых телевизоров или специальных ТВ приставок, там где нет цифрового телевидения будет требоваться спутниковая тарелка
+
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 07/10/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news15">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel15" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel15">14 октября 2019 года в Республике Дагестан прекратится аналоговое вещание общедоступных телерадиоканалов (центральное телевидение) и начнется цифровое телевидение</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>План поэтапного отключения аналогового телевидения в России утвержден решением Правительственной комиссии Российской Федерации по развитию телерадиовещания</p>
+                                    <p>Заблаговременно убедитесь, что Ваш телевизор принимает цифровое телевидение</p>
+                                    <p>20 центральных телеканалов можно будет смотреть только при помощи цифровых телевизоров или специальных ТВ приставок, там где нет цифрового телевидения будет требоваться спутниковая тарелка</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/01.10.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>О заседании российско-итальянской рабочей группы по промышленным округам и сотрудничеству в сфере МСП</strong>
+                        </h3>
+                        <p class="grey-text">В период с 28 по 30 октября 2019 года в г. Калининграде состоится XXVIII заседание Российско-Итальянской рабочей группы по промышленным округам и сотрудничеству в сфере малого и среднего бизнеса при Российско-Итальянском Совете
+                            по экономическому, промышленному и валютно-финансовому сотрудничеству
+                        </p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 01/10/2019</p>
+                        <a href="/news/01.10.2019/47-2790.pdf" class="btn btn-primary btn-md waves-effect waves-light">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+
+
+                </div>
+                <hr class="mb-5">
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/13.09.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гарантийный фонд Республики Дагестан поздравляет с Днем единства народов Дагестана</strong>
+                        </h3>
+                        <p class="grey-text">Сегодня мы поздравляем всех с днём народного единства и хотим напомнить, что несмотря на наши различия, вместе мы сила и нас объединяет любовь, дружба, истинные ценности! Желаем тёплых встреч и радостного праздника!
+                        </p>
+                        <p>Источник:
+                            <a href="index.html" class="font-weight-bold dark-grey-text">Гарантийный фонд РД</a>, 15/09/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news12">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel12" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel12">Гарантийный фонд Республики Дагестан поздравляет с Днем единства народов Дагестана</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Поздравляем с Днем народного единства! Нельзя забывать историю своего народа и предков, ведь именно она сделала нас такими, какие мы есть сейчас.</p>
+                                    <p>Много людей разных национальностей живет на нашей земле, и надо помнить, что мы едины.</p>
+                                    <p>В этот день хочется пожелать силы духа, единства наций, свободы, независимости, стабильности и уверенности.</p>
+                                    <p>А главное, мирного неба над всеми нами, чтобы ни один человек не видел войны!</p>
+                                    <p>С уважением коллектив Гарантийного фонда Республики Дагестан</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/kurban2019/kurban-bairam.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гарантийный фонд поздравляет всех мусульман со священным праздником — Курбан-байрам</strong>
+                        </h3>
+                        <p class="grey-text">Праздник жертвоприношения — один из самых значимых для верующих, поскольку он знаменует собой утверждение в вере, служит сближению людей, единению семьи, призывает к состраданию и взаимному уважению.
+                        </p>
+                        <p>Источник:
+                            <a href="index.html" class="font-weight-bold dark-grey-text">Гарантийный фонд РД</a>, 10/08/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news11">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel11" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel11">Гарантийный фонд поздравляет всех мусульман со священным праздником — Курбан-байрам</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Праздник жертвоприношения — один из самых значимых для верующих, поскольку он знаменует собой утверждение в вере, служит сближению людей, единению семьи, призывает к состраданию и взаимному уважению.
+                                    </p>
+                                    <p>В этот светлый день позвольте пожелать вам и вашим близким крепкого здоровья, добра, мира и благополучия.</p>
+                                    <p>Пусть Курбан-байрам наполнит радостью и светом ваши дома, а сердца — любовью и милосердием.</p>
+                                    <p>Пусть ваши молитвы будут услышаны и принесут успех и удачу во всех добрых начинаниях, душевное спокойствие, умиротворение, благоденствие и счастье.</p>
+                                    <p>С праздником!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/31.07.2019/gerb.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>В целях оценки уровня административной нагрузки на бизнес Аналитическим центром при Правительстве Российской Федерации проводится онлайн-анкетирование.</strong>
+                        </h3>
+                        <p class="grey-text">Для участия в опросе необходимо перейти по ссылке: <a href="https://survey2018.ytdev.com/index.php/516163?lang=ru">https://survey2018.ytdev.com/index.php/516163?lang=ru</a> и заполнить электронную форму анкеты</p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 31/07/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news10">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel10">В целях оценки уровня административной нагрузки на бизнес Аналитическим центром при Правительстве Российской Федерации проводится онлайн-анкетирование.</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>В целях оценки уровня административной нагрузки на бизнес Аналитическим центром при Правительстве Российской Федерации проводится онлайн - анкетирование.</p>
+                                    <p>Для участия в опросе необходимо перейти по ссылке: <a href="https://survey2018.ytdev.com/index.php/516163?lang=ru">https://survey2018.ytdev.com/index.php/516163?lang=ru</a> и заполнить электронную форму анкеты</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Section heading-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/11.07.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гарантийный фонд Дагестана отмечен в СКФО как соответствующий всем показателям</strong>
+                        </h3>
+                        <p class="grey-text">Результаты деятельности региональных гарантийных организаций и поддержки предпринимателей на территории СКФО обсудили накануне в Минкавказе России под председательством заместителя министра по делам Северного Кавказа Ольги Рухуллаевой.</p>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 11/07/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news9">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel9" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel9">Гарантийный фонд Дагестана отмечен в СКФО как соответствующий всем показателям</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Результаты деятельности региональных гарантийных организаций и поддержки предпринимателей на территории СКФО обсудили накануне в Минкавказе России под председательством заместителя министра по делам Северного Кавказа
+                                        Ольги Рухуллаевой.</p>
+                                    <p>Участие в совещании от Дагестана принял заместитель руководителя Агентства по предпринимательству и инвестициям региона Хаджи-Мурад Абашилов. Он подчеркнул, что в рамках встречи Гарантийный фонд Дагестана был отмечен
+                                        как соответствующий всем показателям.</p>
+                                    <p>В рамках встречи была отмечена важность развития малого и среднего предпринимательства для Северного Кавказа. В том числе повышения доступности финансовых ресурсов для реализации инвестпроектов.</p>
+                                    <p>Основным инструментом решения этого вопроса в ближайшие шесть лет, по словам Рухуллаевой, является национальный проект «Малое и среднее предпринимательство и поддержка индивидуальной предпринимательской инициативы»,
+                                        в реализации которого Минкавказ России, СКФО принимают активное участие.</p>
+                                    <p>Напомним, что Минкавказ осуществляет мониторинг проектов субъектов МСП, претендующих на получение кредитной и гарантийной поддержки. В рамках встречи рассмотрены проблемы, с которыми сталкиваются региональные гарантийные
+                                        организации, в частности, это недостаточное взаимодействие с банковскими структурами, низкий темп освоения средств на докапитализацию.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Section heading-->
+                <div class="row">
+
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/claster/claster.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Машиностроительный кластер Республики Татарстан реализует на территории
+                                    Российской Федерации проекты по снижению затрат на электроэнергию.</strong>
+                        </h3>
+                        <br>
+                        <p>Источник:
+                            <a href="http://mspinvestrd.ru/" class="font-weight-bold dark-grey-text">Агентство по предпринимательству и инвестициям РД</a>, 26/06/2019</p>
+                        <br>
+                        <a href="/news/claster/present_claster.pdf" class="btn btn-primary btn-md waves-effect waves-light">Презентация</a>
+                    </div>
+                    <!--Grid column-->
+
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Section heading-->
+                <div class="row">
+
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/12.06.2019/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Гарантийный Фонд Республики Дагестан поздравляет всех россиян c праздником, с Днем России</strong>
+                        </h3>
+                        <p class="grey-text">Наше Отечество – это страна с тысячелетней историей, огромной территорией, уникальным природным и духовным богатством, страна, соединившая в рамках единого государства множество народов, культур и религиозных конфессий. В этот
+                            день каждый из нас чувствует себя частицей великой державы.</p>
+                        <p>Источник:
+                            <a href="index.html" class="font-weight-bold dark-grey-text">Гарантийный Фонд РД</a>, 12/06/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news7">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel7">Гарантийный Фонд Республики Дагестан поздравляет всех россиян c праздником, с Днем России</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Поздравляем Вас с Днем России!</p>
+                                    <p>Наше Отечество – это страна с тысячелетней историей, огромной территорией, уникальным природным и духовным богатством, страна, соединившая в рамках единого государства множество народов, культур и религиозных конфессий.
+                                        В этот день каждый из нас чувствует себя частицей великой державы.</p>
+                                    <p>В самые сложные периоды истории российского государства его неизменно спасали крепость духа, дружба и сплоченность граждан, которые всегда были едины в главном – в стремлении сделать Отчизну независимой, сильной и прекрасной.
+                                        Мы по праву гордимся нашей страной и верим в ее великое будущее.</p>
+                                    <p>Проводимый руководством государства стратегический курс, направленный на глубокую модернизацию экономики, улучшение качества жизни россиян, укрепление международного авторитета России, получает широчайшую поддержку
+                                        в нашей стране. Уверены, что так будет и впредь.</p>
+                                    <p>Мы – граждане единого государства, и от каждого из нас, от нашего труда, энергии и ответственности зависит экономическое и социальное процветание державы.</p>
+                                    <p>Пусть каждый ваш день будет наполнен положительными эмоциями и гордостью за российский народ и нашу святую землю, такую огромную и родную для всех нас! От всей души желаем вам мира, добра, здоровья и благополучия!</p>
+                                    <p>С уважением коллектив Гарантийного Фонда Республики Дагестан</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Grid row-->
+                <div class="row">
+
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/uraza/main.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Коллектив Гарантийного Фонд поздравляет всех мусульман со священным праздником Ураза Байрам</strong>
+                        </h3>
+                        <p class="grey-text">Поздравляем всех жителей республики, исповедующих ислам, с наступающим праздником Ураза-байрам! Это великое торжество знаменует собой окончание священного месяца Рамазан, являющегося символом духовной чистоты, доброты и милосердия.
+                        </p>
+                        <p>Источник:
+                            <a href="index.html" class="font-weight-bold dark-grey-text">Гарантийный Фонд РД</a>, 04/06/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel">Коллектив Гарантийного Фонд поздравляет всех мусульман со священным праздником Ураза Байрам</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Поздравляеи всех жителей республики, исповедующих ислам, с наступающим праздником Ураза-байрам!</p>
+                                    <p>Это великое торжество знаменует собой окончание священного месяца Рамазан, являющегося символом духовной чистоты, доброты и милосердия.</p>
+                                    <p>На протяжении столетий Ураза-байрам – один из самых почитаемых праздников мусульман всего мира - несет в себе глубокий смысл, наполнен стремлением к самосовершенствованию, учит смирению, заботе о старших и нуждающихся
+                                        в помощи и поддержке.</p>
+                                    <p>Вечные, непреходящие ценности, присущие исламу, в полной мере разделяют представители мусульманской общины нашей республики. Принимая активное участие в жизни Республики Дагестан, они способствуют сохранению межнационального
+                                        и межконфессионального согласия в регионе.</p>
+                                    <p>Так пусть празднование Ураза-байрам станет подтверждением духовного единства всех народов, проживающих в Дагестане, общей устремленности к укреплению мира, спокойствия и благополучия в республике!</p>
+                                    <p>С уважением коллектив Гарантийного Фонда Республики Дагестан</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Section heading-->
+                <div class="row">
+
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/28.05.2019/1/prava_pred.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Титов доложит Путину о соблюдении прав предпринимателей</strong>
+                        </h3>
+                        <p class="grey-text">Президент России Владимир Путин в понедельник проведет встречу с бизнес-омбудсменом Борисом Титовым, который доложит главе государства о соблюдении прав предпринимателей, заявил пресс-секретарь российского лидера Дмитрий Песков.
+                        </p>
+                        <p>Источник:
+                            <a href="https://ria.ru" class="font-weight-bold dark-grey-text">РИА Новости</a>, 27/05/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news1">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel1">Титов доложит Путину о соблюдении прав предпринимателей</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Президент России Владимир Путин в понедельник проведет встречу с бизнес-омбудсменом Борисом Титовым, который доложит главе государства о соблюдении прав предпринимателей, заявил пресс-секретарь российского лидера Дмитрий
+                                        Песков.
+                                    </p>
+                                    <p>По его словам, в понедельник Путин занимается внутрикремлевскими совещаниями, встречами и готовится к заседанию Высшего Евразийского экономического совета в Нур-Султане, куда он отправится во вторник во второй половине
+                                        дня.
+                                    </p>
+                                    <p>"Сегодня также президент примет уполномоченного по защите прав предпринимателей Бориса Титова. Они регулярно встречаются. Ежегодно наш бизнес-омбудсмен представляет доклады по правам предпринимателей: как обстоят дела
+                                        с этими правами. И вот сегодня такой доклад будет главе государства в очередной раз представлен. Это будет публичная встреча", - рассказал Песков журналистам.</p>
+                                    <p>В Нур-Султане 29 мая под председательством лидера республики Касым-Жомарта Токаева состоится очередное заседание Высшего Евразийского экономического совета, приуроченное к 25-летию идеи первого президента Казахстана
+                                        Нурсултана Назарбаева о евразийской интеграции и пятилетию подписания договора о Евразийском экономическом союзе. В мероприятии примут участие лидеры Белоруссии, Киргизии и России.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Section heading-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/28.05.2019/2/rost_shtrav.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Титов отметил рост штрафов для бизнеса в России</strong>
+                        </h3>
+                        <p class="grey-text">Суммы уплаченных бизнесом штрафов в России растут, несмотря на снижение числа проверок, рассказал уполномоченный при президенте по защите прав предпринимателей Борис Титов на встрече с президентом РФ Владимиром Путиным.
+                        </p>
+                        <p>Источник:
+                            <a href="https://ria.ru" class="font-weight-bold dark-grey-text">РИА Новости</a>, 27/05/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news2">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news2" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel2">Титов отметил рост штрафов для бизнеса в России</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Суммы уплаченных бизнесом штрафов в России растут, несмотря на снижение числа проверок, рассказал уполномоченный при президенте по защите прав предпринимателей Борис Титов на встрече с президентом РФ Владимиром Путиным.</p>
+                                    <p>"Первое, хотел бы сказать, что число проверок снизилось, причём значительно снизилось, на 41 процент. Но есть и другая сторона медали. К сожалению, при том, что число проверок снизилось, растут штрафы, то есть их количество",
+                                        - заявил Титов. Стенограмма встречи опубликована на сайте Кремля.</p>
+                                    <p>Таким образом, по его словам, финансовая нагрузка на бизнес возрастает, несмотря на усилия властей по сокращению административной нагрузки на предпринимателей.</p>
+                                    <p>"В общем, пока такое отношение: большинство предпринимателей в целом заявило, они считают, что административная нагрузка на них возросла, даже не снизилась, а возросла", – подчеркнул он.</p>
+                                    <p>Титов также отметил, что сами предприниматели в числе основных проблем для ведения бизнеса в России называют уголовное преследование.</p>
+                                    <p>"Здесь у нас, к сожалению, статистика не очень хорошая: пока больше 80% заявляют, что не считают ведение бизнеса у нас в стране делом безопасным. К сожалению, это количество пока только увеличилось", - сказал бизнес-омбудсмен.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <!--Section heading-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/28.05.2019/3/borba_proverka_bus.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Путин призвал бороться с "несуразными" проверками бизнеса</strong>
+                        </h3>
+                        <p class="grey-text">Несуразные проверки и административная нагрузка на бизнес недопустимы, с ними надо бороться, заявил президент РФ Владимир Путин.
+                        </p>
+                        <p>Источник:
+                            <a href="https://ria.ru" class="font-weight-bold dark-grey-text">РИА Новости</a>, 27/05/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news3">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel3">Путин призвал бороться с "несуразными" проверками бизнеса</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Несуразные проверки и административная нагрузка на бизнес недопустимы, с ними надо бороться, заявил президент РФ Владимир Путин.</p>
+                                    <p>Глава государства провел рабочую встречу с уполномоченным при президенте по защите прав предпринимателей Борисом Титовым, который представил ежегодный доклад о положении дел с правами человека в области предпринимательской
+                                        деятельности.
+                                    </p>
+                                    <p>"Несуразность или перетекание административной нагрузки из одного вида в другой недопустимы, с этим нужно бороться, так же как, вы сейчас сказали, с избыточным либо неточным контролем на дорогах. Нельзя допустить, чтобы
+                                        люди страдали, чтобы конкретные предприятия от этого страдали", - заявил Путин.</p>
+                                    <p>Кроме доклада Титов представил президенту "Реестр проблем российского бизнеса" и попросил его дать поручение продолжить работу над докладом на базе аналитического центра при правительстве.</p>
+                                    <p>"Эта межведомственная рабочая группа, которая работала над нашим докладом по развитию несырьевого сектора, продолжить работу этой межведомственной рабочей группы. Там работают представители всех министерств и ведомств,
+                                        которые заинтересованы, Центрального банка, бизнеса и эксперты, чтобы уже проработать все наши предложения и потом на комиссии правительства дать окончательные предложения по поручению", - пояснил он.</p>
+                                    <p>"Хорошо. Давайте так и сделаем", - согласился Путин.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5">
+                <!--Section heading-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1-half">
+                            <img src="/news/20.05.2019/1/Gref.jpg" class="img-fluid rounded" alt="First sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Греф рассказал, что ожидает российскую экономику в 2019 году</strong>
+                        </h3>
+                        <p class="grey-text">Российскую экономику в 2019 году ожидают неопределенность с санкциями, которая оказывает давление на инвестиционный климат и рубль, а также низкая динамика экономического роста, заявил глава Сбербанка Герман Греф в передаче "Действующие
+                            лица с Наилей Аскер-заде" на телеканале "Россия-1".
+                        </p>
+                        <p>Источник:
+                            <a href="https://ria.ru" class="font-weight-bold dark-grey-text">РИА Новости</a>, 20/05/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news4">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel4">Греф рассказал, что ожидает российскую экономику в 2019 году</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Российскую экономику в 2019 году ожидают неопределенность с санкциями, которая оказывает давление на инвестиционный климат и рубль, а также низкая динамика экономического роста, заявил глава Сбербанка Герман Греф в
+                                        передаче "Действующие лица с Наилей Аскер-заде" на телеканале "Россия-1".
+                                    </p>
+                                    <p>"Есть угрозы санкций, как всегда. Эта неопределенность очень сильно давит на инвестиционный климат, и на рубль. Этот год слабой экономической динамики, по нашим оценкам, ниже 2%", - ответил он на вопрос, какие есть
+                                        основные угрозы в 2019 году для российской экономики.</p>
+                                    <p>Глава Сбербанка отметил, что начало реализации национальных проектов не даст положительный эффект для роста ВВП в этом году, это, скорее всего, произойдет в 2020 году.</p>
+                                    <p>"Сейчас началась реализация национальных проектов, в том числе, цифровой экономики. Этот год будет годом "раскачки". Очевидно, что средства потрачены не будут, проекты еще не сформированы. Это будет подход к снаряду.
+                                        Поэтому я бы в этом году не ожидал больших результатов. А вот в следующем году, может быть, за счет реализации национальных проектов может быть и другая экономическая динамика", - считает Греф.</p>
+                                    <p>Сбербанк ожидает, что российская экономика в 2019 году вырастет на 1,4%, а в 2020 году - уже на 2%. При этом банк прогнозирует, что инфляция по итогам 2019 года составит 4,8%, а в 2020 году снизится до 4%.</p>
+                                    <p>Банк России прогнозирует темпы роста ВВП страны в 2019 году в границах 1,2-1,7%, в 2020 году - на уровне 1,8-2,3%. Инфляция, по ожиданиям регулятора, будет по итогам текущего года находиться в диапазоне 4,7–5,2% и вернется
+                                        к 4% в первой половине 2020 года</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5">
+
+                <!--Grid row-->
+                <div class="row mt-3">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1">
+                            <img src="/news/20.05.2019/2/schet_palata.jpg" class="img-fluid rounded" alt="Second sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Счетная палата выявила медленное освоение бюджетных средств на нацпроекты</strong>
+                        </h3>
+                        <p class="grey-text">Расходы бюджета на национальный проект "Производительность труда и поддержка занятости" в первом квартале не осуществлялись, а кассовое исполнение расходов по остальным нацпроектам оказалось существенно ниже среднего уровня расходов
+                            бюджета России</p>
+                        <p>Источник:
+                            <a href="https://ria.ru" class="font-weight-bold dark-grey-text">РИА Новости</a>, 20/05/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news5">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel5">Счетная палата выявила медленное освоение бюджетных средств на нацпроекты</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Расходы бюджета на национальный проект "Производительность труда и поддержка занятости" в первом квартале не осуществлялись, а кассовое исполнение расходов по остальным нацпроектам оказалось существенно ниже среднего
+                                        уровня расходов бюджета России, говорится в оперативном докладе Счетной палаты (СП) о ходе исполнения федерального бюджета за январь-март 2019 года.</p>
+                                    <p>"Майский указ" президента Российской Федерации Владимира Путина, подписанный им в день инаугурации в мае 2018 года, дал старт реализации 12 приоритетным нацпроектам, охватывающим основные направления развития страны:
+                                        "Цифровая экономика", "Экология", "Здравоохранение", "Демография", "Безопасные и качественные автомобильные дороги", "Производительность труда и поддержка занятости", "Наука", "Международная кооперация и экспорт",
+                                        "Образование", "Культура", "Малое и среднее предпринимательство и поддержка предпринимательской инициативы" и "Жилье и городская среда".</p>
+                                    <p>"В первом квартале 2019 года расходы осуществлялись по 11 из 12 национальных проектов (программ)", — отмечает Счетная палата. По данным аудиторов, не были начаты расходы по национальному проекту "Повышение производительности
+                                        труда и поддержка занятости". Бюджетные ассигнования на реализацию этого нацпроекта в 2019 году предусмотрены в сумме 7,14 миллиарда рублей.</p>
+                                    <p>Всего же, по данным Счетной палаты, на 1 апреля 2019 года расходы на реализацию национальных проектов составили 221 миллиард рублей, или 12,8 процента от плана, что на 8,7 процентного пункта ниже среднего уровня исполнения
+                                        расходов федерального бюджета (21,5 процента).</p>
+                                    <p>При этом расходы по восьми нацпроектам оказались ниже среднего уровня, и только по четырем они оказались довольно высокими: по проекту "Здравоохранение" они составили 44,1 процента от плана, "Наука" — 20,6 процента,
+                                        "Демография" — 19,4 процента, "Международная кооперация и экспорт" — 19,3 процента бюджетной росписи.</p>
+                                    <p>"Высокий уровень исполнения расходов по национальному проекту "Здравоохранение" (44,1 процента) обусловлен уровнем исполнения расходов лишь по одному из восьми федеральных проектов — "Борьба с онкологическими заболеваниями"
+                                        (69,7 процента), при этом по четырем федеральным проектам исполнение расходов не осуществлялось, по трем сложилось на крайне низком уровне (менее трех процентов)", — также отмечается в материалах Счетной палаты.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay z-depth-1">
+                            <img src="/news/20.05.2019/3/sber.jpg" class="img-fluid rounded" alt="Third sample image">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Сбербанк заявил о борьбе с мошенниками, устраивающими опросы от его имени</strong>
+                        </h3>
+                        <p class="grey-text">Сбербанк борется с мошенниками, устраивающими онлайн-опросы от его имени, в 2018 году добился закрытия нескольких тысяч таких сайтов, сообщили РИА Новости в пресс-службе банка. Клиенты банка в апреле стали сообщать об участившихся
+                            случаях мошенничества</p>
+                        <p>Источник:
+                            <a href="https://ria.ru" class="font-weight-bold dark-grey-text">РИА Новости</a>, 20/05/2019</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light" data-toggle="modal" data-target="#news6">Подробнее</a>
+                    </div>
+                    <!--Grid column-->
+                    <!-- Central Modal Small -->
+                    <div class="modal fade" id="news6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-lg" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel6">Сбербанк заявил о борьбе с мошенниками, устраивающими опросы от его имени</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Сбербанк борется с мошенниками, устраивающими онлайн-опросы от его имени, в 2018 году добился закрытия нескольких тысяч таких сайтов, сообщили РИА Новости в пресс-службе банка.</p>
+                                    <p>Клиенты банка в апреле стали сообщать об участившихся случаях мошенничества, когда злоумышленники, представляющиеся банком на Facebook пытаются обмануть аудиторию соцсети, предлагая им пройти опрос. Но в результате
+                                        прохождения такого опроса клиенты теряли денежные средства.</p>
+                                    <p>"Служба кибербезопасности Сбербанка борется с подобными сайтами: выявляет их с помощью постоянного мониторинга интернет-пространства и передаёт информацию в специализированные экспертные организации (CERT) для последующей
+                                        блокировки. Всего в 2018 году Сбербанк и его партнеры разделегировали несколько тысяч подобных сайтов", - рассказали в банке.</p>
+                                    <p>Зампред правления Сбербанка Станислав Кузнецов в конце апреля сообщил, что количество случаев мошенничества с использованием методов социальной инженерии продолжает расти с темпом примерно 2-3% в месяц. При этом он
+                                        отметил, что банк не видит факторов, которые могли остановить этот рост.</p>
+                                    <p>В феврале Кузнецов заявлял, что количество совершенных против клиентов Сбербанка мошенничеств с применением социальной инженерии выросло на 30-40% за последние полгода. Тогда он отмечал, что банк еженедельно фиксирует
+                                        до 13-14 тысяч преступлений с использованием этого метода, при этом центр анти-фрода банка блокирует 96-97% попыток злоумышленников.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Central Modal Small -->
+                </div>
+                <!--Grid row-->
+            </section>
+        </div>
+    </main>
+    <!--/Main layout-->
+    <!--Footer-->
+    <footer class="page-footer text-center text-md-left pt-4">
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-3">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Гарантийный Фонд Республики Дагестан</h5>
+                    <p>Основной целью Фонда является обеспечение доступа субъектам МСП и организациям инфраструктуры поддержки субъектов МСП в Республике Дагестан к кредитным и иным финансовым ресурсам.</p>
+                </div>
+                <!--/.First column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Second column-->
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Федеральные</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://government.ru/"><small>Правительство Российской Федерации</small></a></li>
+                        <li><a href="http://kremlin.ru/"><small>Сайт президента Российской Федерации</small></a></li>
+                        <li><a href="http://economy.gov.ru/minec/main"><small>Министерство экономики РФ</small></a></li>
+                        <li><a href="http://www.gov.ru/"><small>Официальные органы власти</small></a></li>
+                        <li><a href="https://corpmsp.ru/"><small>Корпорация МСП</small></a></li>
+                        <li><a href="https://smbn.ru/"><small>Портал Бизнес-Навигатор МСП</small></a></li>
+                        <li><a href="https://www.mspbank.ru/"><small>МСП Банк</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Third column-->
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Республиканские</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.e-dag.ru/"><small>Правительство республики Дагестан</small></a></li>
+                        <li><a href="http://president.e-dag.ru/"><small>Глава республики Дагестан</small></a></li>
+                        <li><a href="http://www.minec-rd.ru/"><small>Министерство экономики Республики Дагестан</small></a></li>
+                        <li><a href="http://mspinvestrd.ru/"><small>Агентство по предпринимательству и инвестициям РД</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Fourth column-->
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Инфраструктура поддержки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><small>Бизнес-инкубатор РД</small></a></li>
+                        <li><a href="http://xn--80aaablegdnj0dg0cep.xn--p1ai/"><small>Фонд «Дагестанская лизинговая компания»</small></a></li>
+                        <li><a href="http://fmrd.ru/"><small>Фонд микрофинансирования РД</small></a></li>
+                        <li><a href="http://cppdag.ru/"><small>Центр поддержки предпринимательства РД</small></a></li>
+                        <li><a href="http://mspinvestrd.ru/about/25"><small>ГАУ РД «Учебно-производственный комбинат»</small></a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+        <!--Social buttons-->
+        <div class="social-section text-center">
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item"><a a href="https://www.facebook.com/profile.php?id=100009553606190&fref=search&__tn__=%2Cd%2CP-R&eid=ARA3M_iPb43HY4TDHUvJ6NJjleR58jUlO4A5Cg6oQa7wCXVSMGudM5XQJ9Uy1-KtwRlgfhREMtGS6yvK" class="btn btn-fb"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a a href="https://www.instagram.com/garant_fond_rd/" class="btn btn-ins"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a a href="mailto:dagfsc@yandex.ru" class="btn btn-email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <!--/.Social buttons-->
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid"><a href="mailto:dejavood@gmail.com"> Azdar Mamaev</a></div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="//гфрд.рф/js/jquery-3.3.1.min.js"></script>
+    <!-- Tooltips -->
+    <script type="text/javascript" src="//гфрд.рф/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="//гфрд.рф/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="//гфрд.рф/js/mdb.min.js"></script>
+    <script type="text/javascript" src="//гфрд.рф/js/mailCallBack.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//гфрд.рф/js/slick-1.8.1/slick/slick.js"></script>
+    <script type="text/javascript" src="//гфрд.рф/js/slick-1.8.1/slick/custom.js"></script>
+
+
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

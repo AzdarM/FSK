@@ -1,0 +1,215 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               webvr_gyro_keeplookingdirection="false"
+	               webvr_prev_next_hotspots="true"
+	               littleplanetintro="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+
+
+	
+	<scene name="scene_agenstvo" title="agenstvo" onstart="" thumburl="panos/agenstvo.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-0.046" vlookat="0.000" fovtype="MFOV" fov="0.512" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/agenstvo.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="0.383836" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="4096" tiledimageheight="1572">
+				<cylinder url="panos/agenstvo.tiles/l2/%v/l2_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="2048" tiledimageheight="788">
+				<cylinder url="panos/agenstvo.tiles/l1/%v/l1_%v_%h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.382" atv="0.032" distorted="false" zoom="false" linkedscene="scene_inkubator" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="0.137" atv="0.057" distorted="false" zoom="false" linkedscene="scene_korr2" />
+
+	</scene>
+
+	<scene name="scene_inkubator" title="inkubator" onstart="" thumburl="panos/inkubator.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/inkubator.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="0.522449" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="2816" tiledimageheight="1472">
+				<cylinder url="panos/inkubator.tiles/l2/%v/l2_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="802">
+				<cylinder url="panos/inkubator.tiles/l1/%v/l1_%v_%h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.027" atv="-0.002" distorted="false" zoom="false" linkedscene="scene_korr1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="0.459" atv="0.040" distorted="false" zoom="false" linkedscene="scene_agenstvo" />
+
+	</scene>
+
+	<scene name="scene_kab1" title="kab1" onstart="" thumburl="panos/kab1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/kab1.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="0.318604" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="4096" tiledimageheight="1306">
+				<cylinder url="panos/kab1.tiles/l2/%v/l2_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="2048" tiledimageheight="654">
+				<cylinder url="panos/kab1.tiles/l1/%v/l1_%v_%h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.000" atv="0.000" distorted="false" zoom="false" linkedscene="scene_korr1" />
+
+	</scene>
+
+	<scene name="scene_kab2" title="kab2" onstart="" thumburl="panos/kab2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/kab2.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="0.300885" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="12544" tiledimageheight="3774">
+				<cylinder url="panos/kab2.tiles/l3/%0v/l3_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="6272" tiledimageheight="1888">
+				<cylinder url="panos/kab2.tiles/l2/%0v/l2_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3136" tiledimageheight="944">
+				<cylinder url="panos/kab2.tiles/l1/%0v/l1_%0v_%0h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.420" atv="-0.017" distorted="false" zoom="false" linkedscene="scene_korr1" />
+
+	</scene>
+
+	<scene name="scene_korr1" title="korr1" onstart="" thumburl="panos/korr1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/korr1.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="0.733333" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="1536" tiledimageheight="1126">
+				<cylinder url="panos/korr1.tiles/l2/%v/l2_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="564">
+				<cylinder url="panos/korr1.tiles/l1/%v/l1_%v_%h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.202" atv="-0.026" distorted="false" zoom="false" linkedscene="scene_kab1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-0.152" atv="-0.031" distorted="false" zoom="false" linkedscene="scene_kab2" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-0.042" atv="-0.031" distorted="false" zoom="false" linkedscene="scene_ruskab" />
+
+	</scene>
+
+	<scene name="scene_korr2" title="korr2" onstart="" thumburl="panos/korr2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/korr2.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="1.291005" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="3072" tiledimageheight="3966">
+				<cylinder url="panos/korr2.tiles/l3/%v/l3_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1984">
+				<cylinder url="panos/korr2.tiles/l2/%v/l2_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="992">
+				<cylinder url="panos/korr2.tiles/l1/%v/l1_%v_%h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.013" atv="0.069" distorted="false" zoom="false" linkedscene="scene_korr1" />
+
+	</scene>
+
+	<scene name="scene_ruskab" title="ruskab" onstart="" thumburl="panos/ruskab.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ruskab.tiles/preview.jpg" />
+
+		<image type="CYLINDER" hfov="1.00" vfov="0.310547" voffset="0.00" multires="true" tilesize="512">
+			<level tiledimagewidth="4096" tiledimageheight="1272">
+				<cylinder url="panos/ruskab.tiles/l2/%v/l2_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="2048" tiledimageheight="636">
+				<cylinder url="panos/ruskab.tiles/l1/%v/l1_%v_%h.jpg" />
+			</level>
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.226" atv="-0.008" distorted="false" zoom="false" linkedscene="scene_korr1" />
+
+	</scene>
+
+
+</krpano>
